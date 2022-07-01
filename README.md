@@ -7,5 +7,5 @@
 - 🤔 I’m looking for help with so many things.
 - 💬 Ask me about Spider-Man, I promise I know a really lot about him.
 - 📫 How to reach me: I don't know if here exist a message system or if you can see my email, so this is jhalejandro@uninorte.edu.co
-and this my portfolio: https://yourfriendlyadc.github.io/YourFriendlyADC/
+and this my portfolio: https://yourfriendlyadc.github.io/
 - ⚡ Fun fact: My entire life doesn't fit here.
