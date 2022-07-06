@@ -1,4 +1,16 @@
+body {
+    background-color: #cbeef0;
+}
+
 h1 {
-    color: blue;
+    font-family: 'Finlandica', sans-serif;
+    color: #31a8ed;
+    text-align: center;    
+}
+
+footer, h2, h3, img, p {
+    font-family: 'Finlandica', sans-serif;
     text-align: center;
+    margin: auto;
+    display: block;
 }
