@@ -1,11 +1,14 @@
-body {
-    background-color: #cbeef0;
+i {
+    font-size: 100px;
+    color: #31a8ed;
+    margin: auto;
 }
 
 h1 {
     font-family: 'Finlandica', sans-serif;
     color: #31a8ed;
-    text-align: center;    
+    text-align: center;
+    text-shadow: 3px 1px black;   
 }
 
 footer, h2, h3, img, p {
@@ -13,4 +16,16 @@ footer, h2, h3, img, p {
     text-align: center;
     margin: auto;
     display: block;
+}
+
+.divOne, .divThree {
+    background-color: #add1d3;
+}
+
+.divTwo, footer {
+    background-color: #cbeef0;
+}
+
+a {
+    margin: 10px 30px;
 }
