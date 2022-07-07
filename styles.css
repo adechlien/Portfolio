@@ -1,6 +1,6 @@
 i {
     font-size: 100px;
-    color: #31a8ed;
+    color: #203642;
     margin: auto;
 }
 
@@ -11,7 +11,12 @@ h1 {
     text-shadow: 3px 1px black;   
 }
 
-footer, h2, h3, img, p {
+img {
+    text-align: center;
+
+}
+
+footer, h2, h3, p {
     font-family: 'Finlandica', sans-serif;
     text-align: center;
     margin: auto;
@@ -20,12 +25,21 @@ footer, h2, h3, img, p {
 
 .divOne, .divThree {
     background-color: #add1d3;
+    text-align: center;
+}
+.divOne:hover, .divThree:hover {
+    background-color: #338d92;
 }
 
 .divTwo, footer {
     background-color: #cbeef0;
 }
 
+.divTwo:hover {
+    background-color: #55bcc2
+}
+
 a {
     margin: 10px 30px;
 }
+
