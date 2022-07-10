@@ -1,6 +1,6 @@
 i {
-    font-size: 100px;
-    color: #203642;
+    font-size: 80px;
+    color: #1b84bd;
     margin: auto;
 }
 
@@ -13,7 +13,21 @@ h1 {
 
 img {
     text-align: center;
+    width: 250px;
+}
 
+.divTwo img{
+    width: 90px;
+    margin: 5px 
+}
+
+.divTwo h3{
+    display: inline-block;
+}
+
+.divTwo .logos #py, #js, #jv {
+    margin: 10px;
+    display: inline-block;
 }
 
 footer, h2, h3, p {
@@ -24,19 +38,22 @@ footer, h2, h3, p {
 }
 
 .divOne, .divThree {
-    background-color: #add1d3;
+    background-color: #daedee;
     text-align: center;
+    border:1px solid #203642;
 }
 .divOne:hover, .divThree:hover {
-    background-color: #338d92;
+    background-color: #b4e6e9;
 }
 
 .divTwo, footer {
+    text-align: center;
+    border:1px solid #203642;
     background-color: #cbeef0;
 }
 
 .divTwo:hover {
-    background-color: #55bcc2
+    background-color: #b0edf0
 }
 
 a {
