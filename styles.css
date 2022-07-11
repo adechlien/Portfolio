@@ -1,63 +1,93 @@
+header {
+    background-color: #1d81bb;
+    display:flex;
+    justify-content: space-between;
+    text-align:justify;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    border:1px solid #203642;
+}
+header a {
+    font-family: 'Finlandica', sans-serif;
+    color: #f7f5ff;
+    font-weight: 500;
+}
+header a:hover {
+    background-color: #70C0EF;
+    padding: 5px;
+}
+header div i {
+    color:#f7f5ff
+}
+
+/* Presentation */
 i {
     font-size: 80px;
     color: #1b84bd;
     margin: auto;
 }
-
 h1 {
     font-family: 'Finlandica', sans-serif;
     color: #31a8ed;
     text-align: center;
     text-shadow: 3px 1px black;   
 }
-
 img {
     text-align: center;
     width: 250px;
 }
-
-.divTwo img{
-    width: 100px;
-    margin: 5px 
-}
-
-.divTwo h3{
-    display: inline-block;
-}
-
-.divTwo .logos #py, #js, #jv {
-    margin-left: 50px;
-    margin-right: 50px;
-    display: inline-block;
-}
-
 footer, h2, h3, p {
     font-family: 'Finlandica', sans-serif;
     text-align: center;
     margin: auto;
     display: block;
 }
-
-
 .divOne {
     background-color: #A2D6F4;
     text-align: center;
     border:1px solid #203642;
 }
+
+/* What I know */
 .divTwo {
     background-color: #70C0EF;
     text-align: center;
     border:1px solid #203642;
 }
+.divTwo img{
+    width: 100px;
+    margin: 5px 
+}
+.divTwo h3{
+    display: inline-block;
+}
+.divTwo .logos #py, #tensorflow, #html, #css, #js, #jv {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+/* Projects */
 .divThree {
     background-color: #50ACE1;
     text-align: center;
     border:1px solid #203642;
 }
+
+/* Footer */
 footer {
     background-color: #349CD8;
     text-align: center;
     border:1px solid #203642;
+}
+
+footer i {
+    font-size: 40px;
+    color: #fff;
+}
+footer .social #gmail, #tt, #github, #ig, #linkedin {
+    display: inline-block;
 }
 /* .divOne:hover, .divThree:hover {
     background-color: #b4e6e9;
@@ -69,7 +99,18 @@ footer {
     background-color: #b0edf0
 } */
 
+/* Links */
 a {
-    margin: 10px 30px;
+    margin-top: 10px;
+    margin: 10px 20px;
+    text-decoration: none;
+    color:#0E192E;
+}
+
+footer a {
+    margin-top: 10px;
+    margin: 10px 20px;
+    text-decoration: none;
+    color:#fff;
 }
 
