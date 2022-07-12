@@ -1,116 +1,167 @@
 header {
-    background-color: #1d81bb;
-    display:flex;
+    background-color: #A29285;
+    display: flex;
     justify-content: space-between;
-    text-align:justify;
+    text-align: justify;
     padding: 10px;
     position: sticky;
     top: 0;
-    border:1px solid #203642;
+    border: 1px solid #81725a;
 }
+
 header a {
     font-family: 'Finlandica', sans-serif;
     color: #f7f5ff;
     font-weight: 500;
+    padding: 10px;
+    transition: .5s;
 }
+
 header a:hover {
-    background-color: #70C0EF;
-    padding: 5px;
-}
-header div i {
-    color:#f7f5ff
+    background-color: #F4F0E5;
+    color: #A29285;
+    padding: 10px;
+    border-radius: 45%;
+    transition: .5s;
 }
 
 /* Presentation */
-i {
-    font-size: 80px;
-    color: #1b84bd;
-    margin: auto;
+.divOne {
+    background-color: #F4F0E5;
+    text-align: center;
+    border: 1px solid #81725a;
 }
+
 h1 {
     font-family: 'Finlandica', sans-serif;
-    color: #31a8ed;
+    color: #A29285;
     text-align: center;
-    text-shadow: 3px 1px black;   
+}
+
+.divOne img {
+    text-align: center;
+    width: 200px;
+    border-radius: 70%;
+    border: 2px solid #A29285;
+    transition: .5s;
+}
+.divOne img:hover {
+    width: 225px;
+    transition: .5s;
 }
 img {
     text-align: center;
     width: 250px;
 }
-footer, h2, h3, p {
+
+.divOne p {
+    color: #A29285;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+h2,
+h3,
+p {
     font-family: 'Finlandica', sans-serif;
     text-align: center;
-    margin: auto;
     display: block;
-}
-.divOne {
-    background-color: #A2D6F4;
-    text-align: center;
-    border:1px solid #203642;
+    color: #302f2f;
 }
 
 /* What I know */
 .divTwo {
-    background-color: #70C0EF;
+    background-color: #EBD9BE;
     text-align: center;
-    border:1px solid #203642;
+    border: 1px solid #81725a;
 }
-.divTwo img{
-    width: 100px;
-    margin: 5px 
+
+.divTwo img {
+    width: 80px;
+    margin: 4px;
 }
-.divTwo h3{
-    display: inline-block;
-}
-.divTwo .logos #py, #tensorflow, #html, #css, #js, #jv {
-    margin-left: 50px;
-    margin-right: 50px;
+
+.divTwo h3 {
     display: inline-block;
 }
 
+.divTwo .logos #py,
+#tensorflow,
+#html,
+#css,
+#js,
+#jv {
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: inline-block;
+    transition: .5s;
+}
+/* .divTwo .logos #py img:hover,
+#tensorflow img:hover,
+#html img:hover,
+#css img:hover,
+#js img:hover,
+#jv img:hover {
+    width: 100px;
+    transition: .5s;
+} */
+
 /* Projects */
 .divThree {
-    background-color: #50ACE1;
+    background-color: #cebda2;
     text-align: center;
-    border:1px solid #203642;
+    border: 1px solid #81725a;
+}
+.app1024 a {
+    background-color: aqua;
+    border-radius: 10px;
+    border: #f7f5ff;
 }
 
 /* Footer */
 footer {
-    background-color: #349CD8;
+    background-color: #b4a48a;
     text-align: center;
-    border:1px solid #203642;
+    border: 1px solid #81725a;
+    font-family: 'Finlandica', sans-serif;
+    display: block;
 }
 
 footer i {
-    font-size: 40px;
-    color: #fff;
+    font-size: 30px;
+    color: #302f2f;
 }
-footer .social #gmail, #tt, #github, #ig, #linkedin {
+
+footer .social #gmail,
+#tt,
+#github,
+#ig,
+#linkedin {
     display: inline-block;
 }
-/* .divOne:hover, .divThree:hover {
-    background-color: #b4e6e9;
-} */
-
-
-
-/* .divTwo:hover {
-    background-color: #b0edf0
-} */
 
 /* Links */
 a {
+    font-family: 'Finlandica', sans-serif;
     margin-top: 10px;
     margin: 10px 20px;
     text-decoration: none;
-    color:#0E192E;
+    color: #302f2f;
 }
 
 footer a {
     margin-top: 10px;
     margin: 10px 20px;
     text-decoration: none;
-    color:#fff;
+    color: #302f2f;
 }
 
+/* mail */
+.mailme {
+    background-color: #F4F0E5;
+    text-align: center;
+}
+.mailme h3 {
+    color:#A29285;
+}
