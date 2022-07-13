@@ -14,6 +14,7 @@ header a {
     color: #f7f5ff;
     font-weight: 500;
     padding: 10px;
+    border-radius: 45%;
     transition: .5s;
 }
 
@@ -92,20 +93,31 @@ p {
 #js,
 #jv {
     width: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: inline-block;
-    transition: .5s;
+    transition: 1.5s;
 }
-/* .divTwo .logos #py img:hover,
+.divTwo .logos #py img,
+#tensorflow img,
+#html img,
+#css img,
+#js img,
+#jv img {
+    width: 80px;
+
+    display: inline-block;
+    transition: 1s;
+}
+.divTwo .logos #py img:hover,
 #tensorflow img:hover,
 #html img:hover,
 #css img:hover,
 #js img:hover,
 #jv img:hover {
-    width: 100px;
+    transform: translateY(-10px);
     transition: .5s;
-} */
+}
 
 /* Projects */
 .divThree {
@@ -113,10 +125,9 @@ p {
     text-align: center;
     border: 1px solid #81725a;
 }
-.app1024 a {
-    background-color: aqua;
-    border-radius: 10px;
-    border: #f7f5ff;
+.divThree .fileOne {
+    margin: 10px;
+    display: inline-block;
 }
 
 /* Footer */
@@ -129,8 +140,11 @@ footer {
 }
 
 footer i {
+    padding: 13px;
     font-size: 30px;
     color: #302f2f;
+    transition: 1s;
+    border-radius: 50%;
 }
 
 footer .social #gmail,
@@ -155,13 +169,146 @@ footer a {
     margin: 10px 20px;
     text-decoration: none;
     color: #302f2f;
+    transition: .5s;
+}
+footer i:hover {
+    padding: 13px;
+    background: #302f2f;
+    color: #F4F0E5;
+    transition: 1s;
+    border-radius: 50%;
 }
 
 /* mail */
 .mailme {
-    background-color: #F4F0E5;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.mailme h3 {
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F4F0E5;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    align-items: center;
+}
+.contact .content h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #A29285;
+}
+.contact .content p {
+    font-weight: 300;
+    color: #A29285;
+}
+.mcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.mcontainer .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.mcontainer .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.mcontainer .contactInfo .box .icono {
+    min-width: 60px;
+    height: 60px;
+    background: #A29285;
+    color: #F4F0E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.mcontainer .contactInfo .box .texto {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #A29285;
+    font-weight: 300;
+    flex-direction: column;
+}
+
+.mcontainer .contactInfo .box .texto h3 {
+    font-weight: 500;
+    color: #81725a;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 10%;
+    border:2px solid #81725a;
+}
+.contactForm h2, span{
     color:#A29285;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #A29285;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color:#81725a;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #A29285;
+    color: #F4F0E5;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10%;
+    transition: .5s;
+}
+.contactForm .inputBox input[type="submit"]:hover {
+    background: #fff;
+    color: #A29285;
+    transition: .5s;
 }
