@@ -1,3 +1,12 @@
+.container {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Nav */
 header {
     background-color: #A29285;
     display: flex;
@@ -7,8 +16,8 @@ header {
     position: sticky;
     top: 0;
     border: 1px solid #81725a;
+    box-sizing: border-box;
 }
-
 header a {
     font-family: 'Finlandica', sans-serif;
     color: #f7f5ff;
@@ -17,7 +26,6 @@ header a {
     border-radius: 45%;
     transition: .5s;
 }
-
 header a:hover {
     background-color: #F4F0E5;
     color: #A29285;
@@ -27,8 +35,10 @@ header a:hover {
 }
 
 /* Presentation */
-.divOne {
-    background-color: #F4F0E5;
+.one {
+    background-image: url(images/bg.png);
+    background-position: bottom;
+    /* background-color: #F4F0E5; */
     text-align: center;
     border: 1px solid #81725a;
 }
@@ -39,14 +49,14 @@ h1 {
     text-align: center;
 }
 
-.divOne img {
+.one img {
     text-align: center;
     width: 200px;
     border-radius: 70%;
     border: 2px solid #A29285;
     transition: .5s;
 }
-.divOne img:hover {
+.one img:hover {
     width: 225px;
     transition: .5s;
 }
@@ -55,7 +65,7 @@ img {
     width: 250px;
 }
 
-.divOne p {
+.one p {
     color: #A29285;
     font-weight: bolder;
     font-size: 18px;
@@ -71,22 +81,22 @@ p {
 }
 
 /* What I know */
-.divTwo {
-    background-color: #EBD9BE;
+.two {
+    background-image: url(images/bg2.png);
+    background-position: bottom;
+    /* background-color: #EBD9BE; */
     text-align: center;
     border: 1px solid #81725a;
 }
 
-.divTwo img {
+.two img {
     width: 80px;
     margin: 4px;
 }
 
-.divTwo h3 {
-    display: inline-block;
-}
 
-.divTwo .logos #py,
+
+.two .logos #py,
 #tensorflow,
 #html,
 #css,
@@ -98,7 +108,7 @@ p {
     display: inline-block;
     transition: 1.5s;
 }
-.divTwo .logos #py img,
+.two .logos #py img,
 #tensorflow img,
 #html img,
 #css img,
@@ -109,7 +119,7 @@ p {
     display: inline-block;
     transition: 1s;
 }
-.divTwo .logos #py img:hover,
+.two .logos #py img:hover,
 #tensorflow img:hover,
 #html img:hover,
 #css img:hover,
@@ -120,12 +130,12 @@ p {
 }
 
 /* Projects */
-.divThree {
+.three {
     background-color: #cebda2;
     text-align: center;
     border: 1px solid #81725a;
 }
-.divThree .fileOne {
+.three .fileOne {
     margin: 10px;
     display: inline-block;
 }
@@ -311,4 +321,19 @@ footer i:hover {
     background: #fff;
     color: #A29285;
     transition: .5s;
+}
+
+@media only screen and (max-width:500px){
+    nav {
+        padding: 10px 0px;
+    }
+    header {
+        display: inline-block;
+        position: sticky;
+        top: 40px;
+    }
+    header a {
+        display: block;
+        margin: 0;
+    }
 }
