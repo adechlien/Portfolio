@@ -5,6 +5,7 @@
     <title> Alejandro Hern&aacute;ndez's Portfolio </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/png" href="images/AG.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
@@ -16,10 +17,8 @@
 
 <body id="home">
     <div class="container">
-        <header>
-            <div>
-                <i class="fa-solid fa-wheat"></i>
-            </div>
+        <header class="desktopMenu">
+            <div> <!-- <i class="fa-solid fa-tree"></i> --> </div>
             <nav>
                 <a href="#home"> Home </a>
                 <a href="#aboutme"> About Me </a>
@@ -27,11 +26,26 @@
                 <a href="#footer"> More Info </a>
             </nav>
         </header>
+        <header class="mobileMenu">
+            <nav>
+                <div class="treeM"><i class="fa-solid fa-tree"></i></div>
+                <input type="checkbox" id="check">
+                <label for="check" class="barBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="navMenu">
+                    <li><a class="active" href="#home"> Home </a></li>
+                    <li><a href="#aboutme"> About Me </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="#footer"> More Info </a></li>
+                </ul>                
+            </nav>
+        </header>
         <div class="one">
             <br><br>
             <img src="images/yo.jpg" title="Alejandro Hern&aacute;ndez">
             <h1> Alejandro Hern&aacute;ndez </h1>
-            <p>An eccentric programmer</p>
+            <p>A _______ programmer</p>
             <br><br><br id="aboutme"><br><br>
         </div>
         <div class="two">
@@ -79,7 +93,7 @@
                 <div id="mordle">
                     <img src="images/mordle-logo.png" title="Mordle">
                     <p class="Mordle">
-                        Mordle can be used to do the Wordle game without any problems or mistakes
+                        Mordle can be used to do the Wordle game without any problems or mistakes.
                     </p> <br> <a href="">Watch Code</a> <a href="">Watch Program</a> <br>
                 </div>
                 <div id="ttt">

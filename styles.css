@@ -7,7 +7,7 @@
 }
 
 /* Nav */
-header {
+.desktopMenu {
     background-color: #A29285;
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,8 @@ header {
     border: 1px solid #81725a;
     box-sizing: border-box;
 }
-header a {
+
+.desktopMenu a {
     font-family: 'Finlandica', sans-serif;
     color: #f7f5ff;
     font-weight: 500;
@@ -26,12 +27,28 @@ header a {
     border-radius: 45%;
     transition: .5s;
 }
-header a:hover {
+
+.desktopMenu a:hover {
     background-color: #F4F0E5;
     color: #A29285;
     padding: 10px;
     border-radius: 45%;
     transition: .5s;
+}
+
+/* .treeD {
+    height: 20px;
+    font-size: 20px;
+    color: #F4F0E5;
+    margin-left: 15px;
+} */
+.desktopMenu {
+    margin: auto;
+    /* background-color: #f00; */
+}
+
+.mobileMenu {
+    display: none;
 }
 
 /* Presentation */
@@ -56,10 +73,12 @@ h1 {
     border: 2px solid #A29285;
     transition: .5s;
 }
+
 .one img:hover {
-    width: 225px;
+    width: 215px;
     transition: .5s;
 }
+
 img {
     text-align: center;
     width: 250px;
@@ -89,13 +108,6 @@ p {
     border: 1px solid #81725a;
 }
 
-.two img {
-    width: 80px;
-    margin: 4px;
-}
-
-
-
 .two .logos #py,
 #tensorflow,
 #html,
@@ -108,6 +120,7 @@ p {
     display: inline-block;
     transition: 1.5s;
 }
+
 .two .logos #py img,
 #tensorflow img,
 #html img,
@@ -115,10 +128,10 @@ p {
 #js img,
 #jv img {
     width: 80px;
-
     display: inline-block;
     transition: 1s;
 }
+
 .two .logos #py img:hover,
 #tensorflow img:hover,
 #html img:hover,
@@ -131,13 +144,23 @@ p {
 
 /* Projects */
 .three {
+    height: 700px;
     background-color: #cebda2;
     text-align: center;
     border: 1px solid #81725a;
 }
+
 .three .fileOne {
     margin: 10px;
     display: inline-block;
+}
+
+.three a {
+    font-size: 20px;
+    background: #EBD9BE;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 400px 20px;
 }
 
 /* Footer */
@@ -153,6 +176,14 @@ footer i {
     padding: 13px;
     font-size: 30px;
     color: #302f2f;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+footer i:hover {
+    padding: 13px;
+    background: #302f2f;
+    color: #F4F0E5;
     transition: 1s;
     border-radius: 50%;
 }
@@ -181,13 +212,8 @@ footer a {
     color: #302f2f;
     transition: .5s;
 }
-footer i:hover {
-    padding: 13px;
-    background: #302f2f;
-    color: #F4F0E5;
-    transition: 1s;
-    border-radius: 50%;
-}
+
+
 
 /* mail */
 .mailme {
@@ -195,6 +221,7 @@ footer i:hover {
     padding: 0;
     box-sizing: border-box;
 }
+
 .contact {
     position: relative;
     min-height: 100vh;
@@ -205,20 +232,24 @@ footer i:hover {
     flex-direction: column;
     background-color: #F4F0E5;
 }
+
 .contact .content {
     max-width: 800px;
     text-align: center;
     align-items: center;
 }
+
 .contact .content h2 {
     font-size: 40px;
     font-weight: 500;
     color: #A29285;
 }
+
 .contact .content p {
     font-weight: 300;
     color: #A29285;
 }
+
 .mcontainer {
     width: 100%;
     display: flex;
@@ -226,11 +257,13 @@ footer i:hover {
     align-items: center;
     margin-top: 30px;
 }
+
 .mcontainer .contactInfo {
     width: 50%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
+
 .mcontainer .contactInfo .box {
     position: relative;
     padding: 20px 0;
@@ -270,17 +303,21 @@ footer i:hover {
     background: #fff;
     font-weight: 500;
     border-radius: 10%;
-    border:2px solid #81725a;
+    border: 2px solid #81725a;
 }
-.contactForm h2, span{
-    color:#A29285;
+
+.contactForm h2,
+span {
+    color: #A29285;
 }
+
 .contactForm .inputBox {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
-.contactForm .inputBox input, 
+
+.contactForm .inputBox input,
 .contactForm .inputBox textarea {
     width: 100%;
     padding: 5px 0;
@@ -291,6 +328,7 @@ footer i:hover {
     outline: none;
     resize: none;
 }
+
 .contactForm .inputBox span {
     position: absolute;
     left: 0;
@@ -300,14 +338,16 @@ footer i:hover {
     pointer-events: none;
     transition: .5s;
 }
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-    color:#81725a;
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #81725a;
     font-size: 12px;
     transform: translateY(-20px);
 }
+
 .contactForm .inputBox input[type="submit"] {
     width: 100px;
     background: #A29285;
@@ -317,23 +357,179 @@ footer i:hover {
     border-radius: 10%;
     transition: .5s;
 }
+
 .contactForm .inputBox input[type="submit"]:hover {
     background: #fff;
     color: #A29285;
     transition: .5s;
 }
 
-@media only screen and (max-width:500px){
-    nav {
+/* iPads */
+@media only screen and (max-width:768px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .mobileMenu {
+        background-color: #F4F0E5;
+        display: flex;
+        list-style: none;
         padding: 10px 0px;
     }
-    header {
-        display: inline-block;
-        position: sticky;
-        top: 40px;
+
+    .mobileMenu nav {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    header a {
+
+    .treeM {
+        width: 140px;
+        font-size: 30px;
+        color: #81725a;
+        margin-left: 15px;
+    }
+
+    .barBtn {
+        font-size: 40px;
+        color: #81725a;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .navMenu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 60px;
+        background: rgba(129, 114, 90, .95);
+        text-align: center;
+        transition: all .4s;
+    }
+
+    .navMenu li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .4s;
+    }
+
+    .navMenu li a {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .navMenu li a.active {
+        color: #cebda2;
+        transition: .3s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked~.navMenu {
+        height: 100vh;
+    }
+
+    #check:checked~.navMenu li {
         display: block;
+    }
+
+    .one img {
+        width: 170px;
+        transition: .5s;
+    }
+
+    .one img:hover {
+        width: 170px;
+        transition: .5s;
+    }
+
+    .two .logos #py,
+    #tensorflow,
+    #html,
+    #css,
+    #js,
+    #jv {
+        width: 150px;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        transition: 1.5s;
+    }
+
+    .two .logos #py img,
+    #tensorflow img,
+    #html img,
+    #css img,
+    #js img,
+    #jv img {
+        width: 90px;
+        transition: 1s;
+
+    }
+
+    h3 {
+        /*height: 30px;*/
+        font-size: 22px;
+    }
+
+    .three {
+        height: 900px;
+    }
+
+    .three img {
+        height: 160px;
+        width: 300px;
+    }
+
+    .three p {
+        margin: 5px 25px;
+        font-size: 20px;
+    }
+
+    .three a {
+        font-size: 20px;
+        background: #EBD9BE;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 20px 20px;
+    }
+
+    footer i {
         margin: 0;
+        padding: 5px;
+    }
+
+    footer .social {
+        height: 75px;
+    }
+
+    footer .social #gmail,
+    #tt,
+    #github,
+    #ig,
+    #linkedin {
+        display: inline-block;
+        width: 75px;
+        height: 65px;
+        height: min-content;
+    }
+    /* .mcontainer {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    } */
+}
+/* Phones */
+@media only screen and (max-width:520px) {
+    .three {
+        height: 1050px;
     }
 }
