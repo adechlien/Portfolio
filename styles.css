@@ -371,10 +371,16 @@ span {
     }
 
     .mobileMenu {
+        justify-content: space-between;
+        text-align: justify;
+        position: sticky;
+        top: 0;
+        box-sizing: border-box;
         background-color: #F4F0E5;
         display: flex;
         list-style: none;
-        padding: 10px 0px;
+        padding: 15px 0px;
+        border: 1px solid #81725a;
     }
 
     .mobileMenu nav {
@@ -520,16 +526,48 @@ span {
         height: 65px;
         height: min-content;
     }
-    /* .mcontainer {
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-    } */
 }
+
 /* Phones */
 @media only screen and (max-width:520px) {
     .three {
         height: 1050px;
+    }
+}
+/* Phones */
+@media only screen and (max-width:375px) {
+    .two .logos #py,
+    #tensorflow,
+    #html,
+    #css,
+    #js,
+    #jv {
+        width: 150px;
+        margin: 5px 10px; 
+        transition: 1.5s;
+    }
+    
+    .three {
+        height: 1120px;
+    }
+    .three a {
+        font-size: 20px;
+        background: #EBD9BE;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 15px 15px;
+    }
+    footer {
+        height: 130px;
+    }
+    footer .social #gmail,
+    #tt,
+    #github,
+    #ig,
+    #linkedin {
+        display: inline-block;
+        width: 65px;
+        height: 55px;
+        height: min-content;
     }
 }
