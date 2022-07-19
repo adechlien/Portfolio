@@ -571,3 +571,19 @@ span {
         height: min-content;
     }
 }
+
+@media only screen and (max-width:320px) {
+    .three a {
+        font-size: 15px;
+        padding: 12px;
+        margin: 12px 12px;
+    }
+    footer .social #gmail,
+    #tt,
+    #github,
+    #ig,
+    #linkedin {
+        width: 60px;
+        height: 50px;
+    }
+}
