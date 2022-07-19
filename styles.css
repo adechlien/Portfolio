@@ -573,10 +573,13 @@ span {
 }
 
 @media only screen and (max-width:320px) {
+    .tree {
+        height: 1200px;
+    }
     .three a {
-        font-size: 15px;
-        padding: 12px;
-        margin: 12px 12px;
+        font-size: 14px;
+        padding: 10px;
+        margin: 5px;
     }
     footer .social #gmail,
     #tt,
