@@ -11,129 +11,165 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap" rel="stylesheet">    
     <script src="https://kit.fontawesome.com/6b69f5d989.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="home">
     <div class="container">
-        <header class="desktopMenu">
-            <div> <!-- <i class="fa-solid fa-tree"></i> --> </div>
-            <nav>
-                <a href="#home"> Home </a>
-                <a href="#aboutme"> About Me </a>
-                <a href="#projects"> Projects </a>
-                <a href="#footer"> More Info </a>
-            </nav>
-        </header>
-        <header class="mobileMenu">
-            <nav>
-                <div class="treeM"><i class="fa-solid fa-tree"></i></div>
-                <input type="checkbox" id="check">
-                <label for="check" class="barBtn">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <ul class="navMenu">
-                    <li><a class="active" href="#home"> Home </a></li>
+        <section class="home" id="home">
+            <header>
+                <a href="#" class="adc"> <i class="fa-solid fa-briefcase"></i> ADC </a>
+                <ul class="nav">
+                    <li><a href="#home"> Home </a></li>
                     <li><a href="#aboutme"> About Me </a></li>
                     <li><a href="#projects"> Projects </a></li>
-                    <li><a href="#footer"> More Info </a></li>
-                </ul>                
-            </nav>
-        </header>
-        <div class="one">
-            <br><br>
-            <img src="images/yo.jpg" title="Alejandro Hern&aacute;ndez">
-            <h1> Alejandro Hern&aacute;ndez </h1>
-            <p>A _______ programmer</p>
-            <br><br><br id="aboutme"><br><br>
-        </div>
-        <div class="two">
-            <br>
-            <h2> What I know </h2>
-            <br>
-            <div class="logos">
-                <div id="py">
-                    <img src="images/python-logo.png" title="Python">
-                    <br>
-                    <h3>Python</h3>
-                </div>
-                <div id="tensorflow">
-                    <img src="images/tensorflow-logo.png" title="TensorFlow">
-                    <br>
-                    <h3>Tensor Flow</h3>
-                </div>
-                <div id="html">
-                    <img src="images/html-logo.png" title="HTML">
-                    <br>
-                    <h3>HTML</h3>
-                </div>
-                <div id="css">
-                    <img src="images/css-logo.png" title="CSS">
-                    <br>
-                    <h3>CSS</h3>
-                </div>
-                <div id="js">
-                    <img src="images/javascript-logo.png" title="JavaScript">
-                    <br>
-                    <h3>JavaScript</h3>
-                </div>
-                <div id="jv">
-                    <img src="images/java-logo.png" title="Java">
-                    <br>
-                    <h3>Java</h3>
+                    <li><a href="#footer"> Contact </a></li>
+                </ul>
+            </header>
+        </section>                
+        <section class="one">
+            <div class="image" id="myImage">
+                <img src="images/me.png" title="Me">
+            </div>
+            <div class="title">
+                <h1> Alejandro Hern&aacute;ndez </h1>
+                <h2> Frontend Developer Junior </h2>
+                <p> Hello, I'm a young guy from Colombia who loves the programming. <br> I develop different types of programs focusing on Web Developing ones. </p>                
+            </div>            
+        </section><br><br><br><br id="aboutme">
+        <section class="two">
+            <br id="aboutme">
+            <h2 class="title"> What I know </h2>
+            <div class="textBox">
+                <p> Here my knowledges in which areas I do. </p>
+            </div>
+            <div class="logos">   
+                <div class="java-things"> 
+                    <div class="sub-title">
+                        <h2> Visual Art </h2>  
+                    </div>
+                    <div class="things">
+                        <div id="jv">
+                            <img src="images/java-logo.png" title="Java">                        
+                            <h3> Java </h3>
+                        </div>
+                        <div id="pcs">
+                            <img src="images/processing-logo.png" title="Processing">                            
+                            <h3> Processing </h3>
+                        </div>
+                    </div>                                      
+                </div> 
+                        
+                <div class="web-developing">
+                    <div class="sub-title">
+                        <h2> Web Development </h2>  
+                    </div>
+                    <div class="things">
+                        <div id="html">
+                            <img src="images/html-logo.png" title="HTML">
+                            <h3> HTML </h3>
+                        </div>
+                        <div id="css">
+                            <img src="images/css-logo.png" title="CSS">
+                            <br>
+                            <h3> CSS </h3>
+                        </div>
+                        <div id="js">
+                            <img src="images/javascript-logo.png" title="JavaScript">                            
+                            <h3> JavaScript </h3>
+                        </div>
+                    </div>                                     
+                </div>                
+                <div class="game-developing">  
+                    <div class="sub-title">
+                        <h2> Game Development </h2>  
+                    </div>
+                    <div class="things">
+                        <div id="cs">
+                            <img src="images/cs-logo.png" title="C#">                        
+                            <h3> C-Sharp </h3>
+                        </div>
+                        <div id="unity">
+                            <img src="images/unity-logo.png" title="Unity">                            
+                            <h3> Unity </h3>
+                        </div>
+                    </div>                    
                 </div>
             </div>
-            <br id="projects"><br><br>
-        </div>
-        <div class="three">
-            <br>
-            <h2> Projects </h2> <br>
-            <div class="fileOne">
-                <div id="mordle">
-                    <img src="images/mordle-logo.png" title="Mordle">
-                    <p class="Mordle">
-                        Mordle can be used to do the Wordle game without any problems or mistakes.
-                    </p> <br> <a href="">Watch Code</a> <a href="">Watch Program</a> <br>
-                </div>
-                <div id="ttt">
-                    <img src="images/tictactoe-logo.png" title="Tic Tac Toe">
-                    <p class="TicTacToe"> TicTacToe is a very known game where we can play against another player or
-                        <br> against the machine, putting Circles or Exes to make a line and win.
-                    </p> <br> <a href="">Watch Code</a> <a href="">Watch Program</a> <br>
-                </div>
+            <br id="projects"><br>
+        </section>
+        <section class="three">
+            
+            <h2 class="title"> Projects </h2>
+            <div class="textBox">
+                <p> The Programs I developed. </p>
             </div>
-            <div id="app1024">
-                <img src="images/1024-logo.png" title="1024"><!-- change description-->
-                <p class="1024"> When two tiles with the same number touch, they merge into one tile with same number
-                    they
-                    summed to one! <br> 1+1 -> 2, 2+2 -> 4, 4+4 -> 8 etc. 512+512=1024 . When you make 1024 tile, you
-                    win.
-                </p> <br> <a href="">Watch Code</a> <a href="">Watch Program</a> <br>
+            <div class="projects">
+                
+                <div class="card campesino">
+                    <div class="images">
+                        <img src="images/campesino-logo.png" title="Campesino"> 
+                    </div>                   
+                    <h3 class="Campesino"> <span> Campesino </span> - 2D Pixelart Videogame</h3>
+                    <p> Dress of a peasant and fight ghosts to rescue your brother
+                        from the Death. </p> <br>
+                    <a href="https://instagram.com/YourFriendlyADC" target="_blank"> <i class="fa-solid fa-eye"></i> Recent Updates </a>
+                </div>
+                
+                <div class="card ttt">
+                    <div class="images">
+                        <img src="images/TTT-logo.png" title="Tic Tac Toe">  
+                    </div>                                   
+                    <h3 class="TicTacToe"> <span> Tic Tac Toe </span> - Classic Game </h3>
+                    <p> A very known game where we can play against another player or
+                        against the machine. </p> <br>
+                    <a href="https://www.instagram.com/p/Cmpi4MMhgoC/" target="_blank"> <i class="fa-solid fa-eye"></i> Watch here </a> 
+                </div>
+                
+                <div class="card calculator">
+                    <div class="images">
+                        <img src="images/calculator-logo.png" title="Calcololatrice"> 
+                    </div>                                     
+                    <h3 class="Calculator"> <span> Calcololatrice </span> - Calculator </h3>
+                    <p> Color changing calculator where you can do the elemental operations. </p> <br>
+                    <a href="https://github.com/YourFriendlyADC/Calcololatrice" target="_blank"> <i class="fa-solid fa-eye"></i> Watch Repository </a>
+                </div>
+            
             </div>
             <br>
-        </div>
+        </section>
         <footer id="footer">
-            <i class="fa-solid fa-square-info"></i>
-            <h2> More Info </h2>
-            <div class="social">
-                <div id="gmail">
-                    <br><a href="mail.html" target="_blank">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
+
+            <div class="title">
+                <h2> Contact </h2>
+            </div>
+
+            <div class="personal">
+                <div class="card" id="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p> (+57) 324-3168468 </p>
                 </div>
+                
+                <div class="card" id="gmail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p> jhalejandro@uninorte.edu.co </p>
+                </div> 
+            </div>
+
+            <div class="social">                                
                 <div id="tt">
-                    <br><a href="https://twitter.com/YourFriendlyADC" target="_blank">
+                    <a href="https://twitter.com/YourFriendlyADC" target="_blank">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
                 <div id="github">
-                    <br><a href="https://github.com/YourFriendlyADC" target="_blank">
+                    <a href="https://github.com/YourFriendlyADC" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
                 <div id="ig">
-                    <br><a href="https://instagram.com/YourFriendlyADC" target="_blank">
+                    <a href="https://instagram.com/YourFriendlyADC" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
@@ -144,8 +180,11 @@
                 </div>
             </div>
             <br>
-        </footer>
+        </footer>        
     </div>
+    <!-- JavaScript  -->
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </body>
 
 </html>
