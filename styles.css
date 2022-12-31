@@ -110,6 +110,7 @@ header .nav li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3em;
 }
 
 .one .title {    
@@ -196,24 +197,25 @@ header .nav li a:hover {
     color: #EFF9FE;
 }
 
+.two .logos {
+    display: inline-block;
+}
+
 .two .logos .sub-title h2 {
     font-size: 1.3em;
     color: #EFF9FE;
     margin-bottom: 0.25em;
 }
 
-.two .logos {
-    display: inline-block;
-}
-
 .two .logos .things {
-    border: 2px solid #EFF9FE;
+    /* border: 2px solid #EFF9FE; */
     border-radius: 5%;
     background: #042849;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 0px 15px 0px 12px;
+    margin: 0px 10px 0px 8px;
     transition: 0.4s;
+    text-align: center;
 }
 
 .two .logos .java-things,
@@ -248,7 +250,6 @@ header .nav li a:hover {
 #js img,
 #jv img, 
 #pcs img {
-    margin-left: 10px;
     margin-bottom: 5px;
     width: 80px;
     transition: .5s;
@@ -403,11 +404,148 @@ footer a {
 }
 /* Mobile */
 @media only screen and (max-width: 1024px) {
-    header {
-        padding: 0px 10px;
+    .one .title {    
+        max-width: 600px;
+        margin-right: 60px;
     }
 
-    .one .title {    
-        max-width: 100px;
+    .three .projects .card {
+        width: 280px;
+        height: 300px;
+    }
+
+    .three .projects .images {
+        width: 180px;
+        padding: 0px 0px 10px 35px;
+    }
+
+    .three .projects a {
+        margin-bottom: 3em;
+    }
+
+    .three .textBox p {
+        margin-bottom: 0;
     }
 }
+
+@media only screen and (max-width: 990px) {
+    .textBox p {
+        margin-bottom: 1em;
+    }
+    
+    .two .logos .java-things,
+    .web-developing, 
+    .game-developing {
+        display: inline;
+        padding-bottom: 1.2em;
+    }
+
+    .two .logos .sub-title h2 {
+        margin-top: 1.25em;
+    }
+
+    .three .projects {
+        display: inline;
+    }
+
+    .three .projects .card {        
+        width: 400px;
+        height: 270px;
+    }
+
+    .three .projects .images {
+        width: 250px;
+        padding: 0px 0px 10px 90px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .one .image {
+        width: 500px;
+    }
+    
+    .one .title {
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .one {
+        display: inline;
+        text-align: center;
+    }
+
+    .one .image {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .one .title {
+        max-width: 825px;
+        width: 100%;
+        margin: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+    header {
+        background: none;
+        padding: 10px 20px;
+    }
+    
+    header .nav {
+        display: none;       
+    }
+
+    header .nav.active {
+        width: 100%;
+        height: calc(100% - 60px);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #042849;
+    }
+
+    header .nav li a {
+        font-size: 2em;
+    }
+
+    header a i {
+        margin: 10px 10px 10px 0px;
+        font-size: 2em;
+        color: #0D3B66;
+    }
+
+    header .adc {
+        font-size: 1.8em;
+        color: #042849;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {    
+        background: url(images/close.png);
+    }
+
+    .menuToggle i {
+        color: #0D3B66;
+    }
+}
+
+/* @media only screen and (max-width: 670px) {
+    .one y contact
+} */

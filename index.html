@@ -19,8 +19,9 @@
 <body id="home">
     <div class="container">
         <section class="home" id="home">
-            <header>
+            <header class="">
                 <a href="#" class="adc"> <i class="fa-solid fa-briefcase"></i> ADC </a>
+                <div class="menuToggle" onclick="toggleMenu()"></div>
                 <ul class="nav">
                     <li><a href="#home"> Home </a></li>
                     <li><a href="#aboutme"> About Me </a></li>
@@ -33,13 +34,13 @@
             <div class="image" id="myImage">
                 <img src="images/me.png" title="Me">
             </div>
-            <div class="title">
+            <div class="title" id="title">
                 <h1> Alejandro Hern&aacute;ndez </h1>
                 <h2> Frontend Developer Junior </h2>
                 <p> Hello, I'm a young guy from Colombia who loves the programming. <br> I develop different types of programs focusing on Web Developing ones. </p>                
-            </div>            
-        </section><br><br><br><br id="aboutme">
-        <section class="two">
+            </div>          
+        </section>
+        <section class="two" id="aboutme">
             <br id="aboutme">
             <h2 class="title"> What I know </h2>
             <div class="textBox">
@@ -184,7 +185,7 @@
         </footer>        
     </div>
     <!-- JavaScript  -->
-    <script src="scripts.js"></script>
+    <!-- <script src="scripts.js"></script> -->
 </body>
 
 </html>
