@@ -89,17 +89,6 @@ header .nav li a:hover {
 }
 /* Nav
 
-.mobileMenu {
-    display: none;
-} */
-
-/* .web-icon {
-    height: 20px;
-    font-size: 8px;
-    color: #F4F0E5;
-    margin-left: 15px;
-} */
-
 /* Presentation */
 .one {
     background-position: bottom;
@@ -477,7 +466,7 @@ footer a {
 
     .one .image {
         width: 100%;
-        margin: 0px;
+        margin-bottom: 2em;
     }
 
     .one .title {
@@ -502,13 +491,13 @@ footer a {
         width: 100%;
         height: calc(100% - 60px);
         position: fixed;
-        top: 50px;
+        top: 70px;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #042849;
+        background: #0D3B66;
     }
 
     header .nav li a {
@@ -517,21 +506,21 @@ footer a {
 
     header a i {
         margin: 10px 10px 10px 0px;
-        font-size: 2em;
-        color: #0D3B66;
+        font-size: 1.4em;
+        color: #1c76ca;
     }
 
     header .adc {
-        font-size: 1.8em;
-        color: #042849;
+        font-size: 1.4em;
+        color: #1c76ca;
     }
 
     .menuToggle {
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         background: url(images/menu.png);
-        background-size: 50px;
+        background-size: 40px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
@@ -539,13 +528,58 @@ footer a {
 
     .menuToggle.active {    
         background: url(images/close.png);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
     }
 
     .menuToggle i {
         color: #0D3B66;
     }
+
+    .one {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        margin-bottom: 1em;
+
+    }    
+
+    .one .image {
+        max-width: 240px;
+    }
+
+    .one .title {
+        max-width: 320px;
+    }
+
+    .one .title h1{
+        font-size: 1.7em;
+    }
+    
+    .one .title h2 {
+        font-size: 1em;
+    }
+    
+    .one .title p {
+        font-size: 0.9em;
+        margin-bottom: 0px;
+    }
+
 }
 
-/* @media only screen and (max-width: 670px) {
-    .one y contact
-} */
+@media only screen and (max-width: 570px) {
+    footer i {
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    footer .personal {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+}
