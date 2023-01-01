@@ -579,7 +579,58 @@ footer a {
 
     footer .personal {
         display: block;
-        flex-direction: column;
-        text-align: center;
+        margin: 5% 28%;       
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    footer .personal {
+        margin: 5% 25%;       
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .three .projects .card {        
+        width: 350px;
+    }
+
+    .three .projects .images {
+        width: 220px;
+    }
+
+    footer .personal {
+        margin: 5% 23%;       
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    .two .logos .things {
+        width: 340px;
+    }
+
+    .two .logos #cs,
+    #unity,
+    #html,
+    #css,
+    #js,
+    #jv,
+    #pcs {
+        width: 90px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .two .logos #cs img,
+    #unity img,
+    #html img,
+    #css img,
+    #js img,
+    #jv img, 
+    #pcs img {
+        width: 70px;
+    }
+
+    footer .personal {
+        margin: 4% 21%;       
     }
 }
