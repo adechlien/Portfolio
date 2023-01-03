@@ -58,3 +58,12 @@ function toggleMenu() {
     menuToggle.classList.toggle('active');
     nav.classList.toggle('active');
 }
+
+// var me;
+// for (let i = 10; i < 0; i++) {
+//     me.toOverthink();
+// }
+
+// function toOverthink() {
+//     me = 5;
+// }
