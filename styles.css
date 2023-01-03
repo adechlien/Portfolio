@@ -41,7 +41,6 @@ header {
     top: 0;
     Left: 0;
     width: 100%;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +170,6 @@ header .nav li a:hover {
 
 .textBox {
     position: relative;
-    width: 550px;
 }
 
 .textBox p {
@@ -399,12 +397,12 @@ footer a {
     }
 
     .three .projects .card {
-        width: 280px;
+        max-width: 280px;
         height: 300px;
     }
 
     .three .projects .images {
-        width: 180px;
+        max-width: 180px;
         padding: 0px 0px 10px 35px;
     }
 
@@ -438,19 +436,19 @@ footer a {
     }
 
     .three .projects .card {        
-        width: 400px;
+        max-width: 400px;
         height: 270px;
     }
 
     .three .projects .images {
-        width: 250px;
+        max-width: 250px;
         padding: 0px 0px 10px 90px;
     }
 }
 
 @media only screen and (max-width: 900px) {
     .one .image {
-        width: 500px;
+        max-width: 460px;
     }
     
     .one .title {
@@ -480,7 +478,7 @@ footer a {
 @media only screen and (max-width: 670px) {
     header {
         background: none;
-        padding: 10px 20px;
+        padding: 10px 10px;
     }
     
     header .nav {
@@ -505,7 +503,7 @@ footer a {
     }
 
     header a i {
-        margin: 10px 10px 10px 0px;
+        margin-top: 10px;
         font-size: 1.4em;
         color: #1c76ca;
     }
@@ -572,6 +570,14 @@ footer a {
 }
 
 @media only screen and (max-width: 570px) {
+    header {
+        width: 100%;
+    }
+
+    header .nav.active {
+        width: 100%;
+    }
+    
     footer i {
         padding: 5px;
         font-size: 25px;
@@ -580,18 +586,18 @@ footer a {
 
 @media only screen and (max-width: 490px) {
     .three .projects .card {        
-        width: 350px;
+        max-width: 350px;
     }
 
     .three .projects .images {
-        width: 220px;
+        max-width: 220px;
     }
 }
 
 @media only screen and (max-width: 446px) {
     
     .two .logos .things {
-        width: 340px;
+        max-width: 340px;
     }
 
     .two .logos #cs,
