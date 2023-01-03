@@ -583,7 +583,7 @@
 
 			/**
 			 * Let’s make sure our our pixel distances are negative for top and left.
-			 * e.g. { origin: 'top', distance: '25px' } starts at `top: -25px` in CSS.
+			 * e.g. { origin: 'top', distance: '1.5625em' } starts at `top: -1.5625em` in CSS.
 			 */
 			var distance = config.distance;
 			if (config.origin === 'top' || config.origin === 'left') {

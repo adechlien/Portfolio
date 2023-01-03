@@ -9,10 +9,7 @@
     scroll-behavior: smooth;
 }
 
-h1, 
-h2,
-h3,
-p {    
+h1, h2, h3, p {
     text-align: center;
     display: block;
 }
@@ -23,14 +20,15 @@ body {
 }
 
 section {
-    padding: 30px;
+    padding: 1.875em;
     background-color: #EFF9FE;
 }
 
+/* Nav */
 .home {
     position: relative;
     width: 100%;
-    min-height: 50px;
+    min-height: 3.125em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,14 +45,14 @@ header {
     z-index: 1000;
     transition: 0.3s;
     background: #0D3B66;    
-    padding: 0px 40px;
+    padding: 0 2.5em;
 }
 
 header .adc { 
-    font-size: 25px;
+    font-size: 1.5625em;
     text-decoration: none;       
     color: #EFF9FE;
-    padding: 0px 10px;
+    padding: 0 0.625em;
     font-weight: bolder;
 }
 
@@ -65,16 +63,16 @@ header .nav {
 
 header .nav li {
     list-style: none;
-    margin: 20px;
+    margin: 1.25em;
 }
 
 header .nav li a {
     text-decoration: none;
     color: #EFF9FE;
     font-weight: 600;
-    padding: 10px;
+    padding: 0.5em;
     transition: 0.6s;
-    font-size: 15px;
+    font-size: 0.9375em;
     text-transform: uppercase;
     border-radius: 10%;
 }
@@ -85,7 +83,6 @@ header .nav li a:hover {
     border-radius: 10%;
     transition: .6s;
 }
-/* Nav
 
 /* Presentation */
 .one {
@@ -100,52 +97,50 @@ header .nav li a:hover {
     margin-bottom: 3em;
 }
 
-.one .title {    
-    max-width: 600px;
+.one .title {
+    max-width: 31.25em;
     color: #0D3B66;
-    margin-right: 120px;
+    margin-right: 7.5em;
 }
 
 .one .title h1{
     text-transform: uppercase; 
     line-height: 1.5;
-    text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 0.125em;
 }
 
 .one .title h2 {
     line-height: 1.5;
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
     font-weight: 500;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .one .title p {
     color: #0D3B66;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
 }
 
 .one .image {
-    width: 600px;
+    width: 37.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0px 50px 0px;    
+    margin: 3.125em 0 3.125em 0;
 }
 
 .one .image img {
-    width: 270px;
-    box-shadow: 15px 15px 0px 0px #0D3B66;        
+    width: 16.875em;
+    box-shadow: 0.9375em 0.9375em 0 0 #0D3B66;        
     border-radius: 5%;
     transition: .5s;
-    border: 3px solid #437eb4;
+    border: 0.125em solid #437eb4;
 }
 
 .one img:hover {
-    transform: translate(-10px);    
-    box-shadow: 35px 15px 0px 0px #0D3B66;
+    transform: translate(-0.625em);    
+    box-shadow: 2.1875em 0.9375em 0 0 #0D3B66;
     transition: .5s;
 }
 
@@ -163,23 +158,17 @@ header .nav li a:hover {
     font-size: 2em;
     font-weight: 600;
     color: #EFF9FE;
-    text-align: center;
-    margin-bottom: 10px;
-    text-transform: uppercase;   
+    margin-bottom: 0.625em;
+    text-transform: uppercase;  
 }
 
-.textBox {
-    position: relative;
-}
-
-.textBox p {
-    text-align: center;
+.two .textBox p {
     color: #EFF9FE;
-    margin-bottom: 40px;
+    margin-bottom: 2em;
 }
 
 .two h3 {
-    font-size: 18px;    
+    font-size: 1.125em;    
     color: #EFF9FE;
 }
 
@@ -194,62 +183,42 @@ header .nav li a:hover {
 }
 
 .two .logos .things {
-    /* border: 2px solid #EFF9FE; */
     border-radius: 5%;
     background: #042849;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0px 10px 0px 8px;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    margin: 0 0.6em;
     transition: 0.4s;
     text-align: center;
 }
 
-.two .logos .java-things,
-.web-developing, 
-.game-developing {
+.two .logos .java-things, .web-developing, .game-developing {
     display: inline-block;    
 }
 
 .two .logos .things:hover {
-    box-shadow: 5px 5px 3px 3px #0c0d4d;
+    box-shadow: 0.3125em 0.3125em 0.1875em 0.1875em #0c0d4d;
     transition: 0.4s;  
 }
 
-.two .logos #cs,
-#unity,
-#html,
-#css,
-#js,
-#jv,
-#pcs {
-    width: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
+.two .logos #cs, #unity, #html, #css, #js, #jv, #pcs {
+    width: 6.25em;
+    margin: 0 0.5em;
     transition: 1.5s;
     display: inline-block;
 }
 
-.two .logos #cs img,
-#unity img,
-#html img,
-#css img,
-#js img,
-#jv img, 
-#pcs img {
-    margin-bottom: 5px;
-    width: 80px;
+.two .logos #cs img, #unity img, #html img,
+#css img, #js img, #jv img, #pcs img {
+    margin-bottom: 0.3125em;
+    width: 5em;
     transition: .5s;
-    filter: drop-shadow(4px 3px 1px #0c0d4d);
+    filter: drop-shadow(0.25em 0.1875em 0.0625em #0c0d4d);
 }
 
-.two .logos #cs img:hover,
-#unity img:hover,
-#html img:hover,
-#css img:hover,
-#js img:hover,
-#jv img:hover,
-#pcs img:hover {
-    transform: translateY(-10px);
+.two .logos #cs img:hover, #unity img:hover, #html img:hover,
+#css img:hover, #js img:hover, #jv img:hover, #pcs img:hover {
+    transform: translateY(-0.625em);
     transition: .5s;
 }
 
@@ -266,24 +235,22 @@ header .nav li a:hover {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 70px;    
-    /* border: 1px solid #0c0d4d; */
+    grid-gap: 4.375em;
 }
 
 .three .projects .card {
     text-align: center;
     color: #0c0d4d;
-    width: 350px;
-    height: 280px;
-    padding: 30px;
-    margin-bottom: 2em;
-    /* border: 1px solid #0c0d4d; */
+    width: 21.875em;
+    padding: 1.875em auto;
 }
 
 .three .projects .images {
-    width: 220px;
-    padding: 0px 0px 10px 70px;
-    /* border: 1px solid #0c0d4d; */
+    width: 13.75em;
+    padding: 0 2.1875em;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .three .projects .images img {
@@ -302,7 +269,7 @@ header .nav li a:hover {
     color: #0D3B66;
 }
 
-.three .projects a {
+.three .projects .card a {
     color: #0c0d4d;
     text-decoration: none;
     font-weight: 500;
@@ -313,12 +280,16 @@ header .nav li a:hover {
     font-size: 1.8em;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
+}
+
+.three .card p {
+    margin: 0.6em 0;
 }
 
 .three .textBox p {
     color: #0D3B66;
-    margin-bottom: 10px;
+    margin-bottom: 2em;
 }
 
 /* Footer */
@@ -338,23 +309,20 @@ footer .title {
 }
 
 footer i {
-    padding: 10px;
-    font-size: 30px;
+    padding: 0.625em;
+    font-size: 1.875em;
     color: #EFF9FE;
     transition: 1s;
     border-radius: 50%;
 } 
 
-footer .social i:hover {    
+footer .social i:hover {
     background: #EFF9FE;
     color: #0D3B66;
     transition: 1s;
 }
 
-footer .social #tt,
-#github,
-#ig,
-#linkedin {
+footer .social #tt, #github, #ig, #linkedin {
     display: inline-block;
 }
 
@@ -375,47 +343,31 @@ footer .personal .card {
     align-items: center;
     width: 100%;
     color: #EFF9FE;
-    /* border: 1px solid #0c0d4d; */
-}
-
-footer .personal #phone,
-#gmail {
-    margin-bottom: 1em;
 }
 
 footer a {
-    margin-top: 10px;
-    margin: 10px 20px;
+    margin-top: 0.625em;
+    margin: 0.625em 1.25em;
     text-decoration: none;
     transition: .5s;
 }
+
 /* Mobile */
 @media only screen and (max-width: 1024px) {
-    .one .title {    
-        max-width: 600px;
-        margin-right: 60px;
-    }
-
     .three .projects .card {
-        max-width: 280px;
-        height: 300px;
-    }
-
-    .three .projects .images {
-        max-width: 180px;
-        padding: 0px 0px 10px 35px;
-    }
-
-    .three .projects a {
-        margin-bottom: 3em;
-    }
-
-    .three .textBox p {
-        margin-bottom: 0;
+        max-width: 17.5em;
     }
 }
-
 @media only screen and (max-width: 990px) {
+    .one .title {
+        max-width: 50em;
+        margin-right: 3.75em;
+    }
+
+    .one .title h1 {
+        font-size: 1.75em;
+    }
+    
     .textBox p {
         margin-bottom: 1em;
     }
@@ -427,6 +379,21 @@ footer a {
         padding-bottom: 1.2em;
     }
 
+    .two .logos .java-things .things {
+        width: 17.5em;
+        margin: 0 auto;
+    }
+
+    .two .logos .web-developing .things {
+        width: 24.375em;
+        margin: 0 auto;
+    }
+
+    .two .logos .game-developing .things {
+        width: 17.5em;
+        margin: 0 auto;
+    }
+
     .two .logos .sub-title h2 {
         margin-top: 1.25em;
     }
@@ -435,27 +402,11 @@ footer a {
         display: inline;
     }
 
-    .three .projects .card {        
-        max-width: 400px;
-        height: 270px;
-    }
-
-    .three .projects .images {
-        max-width: 250px;
-        padding: 0px 0px 10px 90px;
+    .three .projects .card {
+        height: 16.875em;
+        margin-bottom: 1.75em;
     }
 }
-
-@media only screen and (max-width: 900px) {
-    .one .image {
-        max-width: 460px;
-    }
-    
-    .one .title {
-        margin-right: 40px;
-    }
-}
-
 @media only screen and (max-width: 825px) {
     .one {
         display: inline;
@@ -464,21 +415,18 @@ footer a {
 
     .one .image {
         width: 100%;
-        margin-bottom: 2em;
+        margin: 2em auto;
     }
 
     .one .title {
-        max-width: 825px;
         width: 100%;
-        margin: 0px;
+        margin: 1em auto;
     }
-
 }
-
 @media only screen and (max-width: 670px) {
     header {
         background: none;
-        padding: 10px 10px;
+        padding: 0.625em 0.625em;
     }
     
     header .nav {
@@ -487,9 +435,9 @@ footer a {
 
     header .nav.active {
         width: 100%;
-        height: calc(100% - 60px);
+        height: calc(100% - 3.75em);
         position: fixed;
-        top: 70px;
+        top: 4.375em;
         left: 0;
         display: flex;
         justify-content: center;
@@ -503,7 +451,7 @@ footer a {
     }
 
     header a i {
-        margin-top: 10px;
+        margin-top: 0.625em;
         font-size: 1.4em;
         color: #1c76ca;
     }
@@ -515,10 +463,10 @@ footer a {
 
     .menuToggle {
         position: relative;
-        width: 30px;
-        height: 30px;
+        width: 1.875em;
+        height: 1.875em;
         background: url(images/menu.png);
-        background-size: 40px;
+        background-size: 2.5em;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
@@ -526,7 +474,7 @@ footer a {
 
     .menuToggle.active {    
         background: url(images/close.png);
-        background-size: 40px;
+        background-size: 2.5em;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
@@ -540,18 +488,17 @@ footer a {
         text-align: center;
         display: flex;
         justify-content: center;
-        /* align-items: center; */
         flex-direction: column;
         margin-bottom: 1em;
 
     }    
 
     .one .image {
-        max-width: 240px;
+        max-width: 15em;
     }
 
     .one .title {
-        max-width: 320px;
+        max-width: 28.125em;
     }
 
     .one .title h1{
@@ -564,11 +511,9 @@ footer a {
     
     .one .title p {
         font-size: 0.9em;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
-
 }
-
 @media only screen and (max-width: 570px) {
     header {
         width: 100%;
@@ -579,46 +524,66 @@ footer a {
     }
     
     footer i {
-        padding: 5px;
-        font-size: 25px;
+        font-size: 1.5625em;
     }
 }
-
 @media only screen and (max-width: 490px) {
-    .three .projects .card {        
-        max-width: 350px;
+    .one .title {
+        max-width: 320px;
     }
 
     .three .projects .images {
         max-width: 220px;
     }
 }
-
 @media only screen and (max-width: 446px) {
-    
-    /* .two .logos .things {
-        max-width: 340px;
-    } */
-
-    .two .logos #cs,
-    #unity,
-    #html,
-    #css,
-    #js,
-    #jv,
-    #pcs {
-        width: 100px;
-        margin-left: 0px;
-        margin-right: 0px;
+    .two .logos #cs, #unity, #html, #css, #js, #jv, #pcs {
+        width: 6.25em;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .two .logos #cs img,
-    #unity img,
-    #html img,
-    #css img,
-    #js img,
-    #jv img, 
-    #pcs img {
-        width: 70px;
+    .two .logos #cs img, #unity img, #html img, #css img,
+    #js img, #jv img, #pcs img {
+        width: 4.375em;
+    }
+
+    .two .logos .java-things .things {
+        width: 15.625em;
+    }
+
+    .two .logos .web-developing .things {
+        width: 21.875em;
+    }
+
+    .two .logos .game-developing .things {
+        width: 15.625em;
+    }
+
+    .three .card {
+        max-width: 18.75em;
+    }
+
+    footer .social #tt, #github, #ig, #linkedin {
+        width: 4.6875em;
+    }
+}
+@media only screen and (max-width: 386px) {
+    .two .logos #cs, #unity, #html, #css, #js, #jv, #pcs {
+        width: 5.625em;
+    }
+    .two .logos .java-things .things {
+        width: 12.5em;
+        padding: 0.8em 0;
+    }
+
+    .two .logos .web-developing .things {
+        width: 18.75em;
+        padding: 1.2em 0;
+    }
+
+    .two .logos .game-developing .things {
+        width: 12.5em;
+        padding: 0.8em 0;
     }
 }
