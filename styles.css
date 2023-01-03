@@ -596,9 +596,9 @@ footer a {
 
 @media only screen and (max-width: 446px) {
     
-    .two .logos .things {
+    /* .two .logos .things {
         max-width: 340px;
-    }
+    } */
 
     .two .logos #cs,
     #unity,
@@ -607,7 +607,7 @@ footer a {
     #js,
     #jv,
     #pcs {
-        width: 90px;
+        width: 100px;
         margin-left: 0px;
         margin-right: 0px;
     }
