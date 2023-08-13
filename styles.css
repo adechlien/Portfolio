@@ -9,19 +9,20 @@
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     text-align: center;
     display: block;
+    text-decoration: none;
 }
 
 body {
-    background:#EFF9FE;
+    background:#F0EAD2;
     overflow-x: hidden;
 }
 
 section {
     padding: 1.875em;
-    background-color: #EFF9FE;
+    background-color: #F0EAD2;
 }
 
 /* Nav */
@@ -44,14 +45,14 @@ header {
     align-items: center;
     z-index: 1000;
     transition: 0.3s;
-    background: #0D3B66;    
+    background: rgb(240, 234, 210);    
     padding: 0 2.5em;
 }
 
 header .adc { 
     font-size: 1.5625em;
     text-decoration: none;       
-    color: #EFF9FE;
+    color: #8ea356;
     padding: 0 0.625em;
     font-weight: bolder;
 }
@@ -68,38 +69,39 @@ header .nav li {
 
 header .nav li a {
     text-decoration: none;
-    color: #EFF9FE;
+    color: #8ea356;
     font-weight: 600;
     padding: 0.5em;
     transition: 0.6s;
     font-size: 0.9375em;
     text-transform: uppercase;
-    border-radius: 10%;
+    border-radius: .5em;
 }
 
 header .nav li a:hover {
-    background-color: #EFF9FE;
-    color: #0D3B66;
-    border-radius: 10%;
+    background-color: #8ea356;
+    color: #F0EAD2;
+    border-radius: .5em;
     transition: .6s;
 }
 
 /* Presentation */
 .one {
     background-position: bottom;
-    background-color: #EFF9FE;
+    background-color: #F0EAD2;
     text-align: center;
     position: relative;
+    padding: 0;
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3em;
 }
 
 .one .title {
     max-width: 31.25em;
-    color: #0D3B66;
+    color: #A98467;
     margin-right: 7.5em;
 }
 
@@ -118,8 +120,7 @@ header .nav li a:hover {
 }
 
 .one .title p {
-    color: #0D3B66;
-    margin-bottom: 0.9375em;
+    margin-bottom: 2em;
 }
 
 .one .image {
@@ -132,22 +133,40 @@ header .nav li a:hover {
 
 .one .image img {
     width: 16.875em;
-    box-shadow: 0.9375em 0.9375em 0 0 #0D3B66;        
-    border-radius: 5%;
+    box-shadow: 0.9375em 0.9375em 0 0 #A98467;        
+    border-radius: 25%;
     transition: .5s;
-    border: 0.125em solid #437eb4;
+    border: 0.125em solid #A98467;
 }
 
 .one img:hover {
     transform: translate(-0.625em);    
-    box-shadow: 2.1875em 0.9375em 0 0 #0D3B66;
+    box-shadow: 2.1875em 0.9375em 0 0 #A98467;
+    transition: .5s;
+}
+
+.one .download-cv {
+    background-color: #f7ede6;
+    color: #A98467;
+    font-size: 1.5em;
+    border-radius: .5em;
+    display: inline;
+    padding: .125em .5em;
+    box-shadow: 0.25em 0.25em 0 0 #A98467;        
+    border: 0.05em solid #A98467;
+    transition: .5s;
+}
+
+.one .download-cv:hover {
+    transform: translate(.5em);  
+    box-shadow: .5em .5em 0 0 #A98467;
     transition: .5s;
 }
 
 /* What I know */
 .two {
     position: relative;
-    background: #0D3B66;
+    background: #A98467;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,19 +176,19 @@ header .nav li a:hover {
 .two .title {
     font-size: 2em;
     font-weight: 600;
-    color: #EFF9FE;
+    color: #F0EAD2;
     margin-bottom: 0.625em;
     text-transform: uppercase;  
 }
 
 .two .textBox p {
-    color: #EFF9FE;
+    color: #F0EAD2;
     margin-bottom: 2em;
 }
 
 .two h3 {
     font-size: 1.125em;    
-    color: #EFF9FE;
+    color: #F0EAD2;
 }
 
 .two .logos {
@@ -178,13 +197,13 @@ header .nav li a:hover {
 
 .two .logos .sub-title h2 {
     font-size: 1.3em;
-    color: #EFF9FE;
+    color: #F0EAD2;
     margin-bottom: 0.25em;
 }
 
 .two .logos .things {
-    border-radius: 5%;
-    background: #042849;
+    border-radius: 2em;
+    background: #A98467;
     padding-top: 1.25em;
     padding-bottom: 1.25em;
     margin: 0 0.6em;
@@ -196,28 +215,23 @@ header .nav li a:hover {
     display: inline-block;    
 }
 
-.two .logos .things:hover {
-    box-shadow: 0.3125em 0.3125em 0.1875em 0.1875em #0c0d4d;
-    transition: 0.4s;  
-}
-
-.two .logos #cs, #unity, #html, #css, #js, #jv, #pcs {
+.two .logos #html, #css, #js, #react, #sass, #github {
     width: 6.25em;
     margin: 0 0.5em;
     transition: 1.5s;
     display: inline-block;
 }
 
-.two .logos #cs img, #unity img, #html img,
-#css img, #js img, #jv img, #pcs img {
+.two .logos #html img, #css img, #js img,
+#react img, #sass img, #github img {
     margin-bottom: 0.3125em;
     width: 5em;
     transition: .5s;
-    filter: drop-shadow(0.25em 0.1875em 0.0625em #0c0d4d);
+    filter: drop-shadow(0.125em 0.1875em 0.0625em #6c4c34);
 }
 
-.two .logos #cs img:hover, #unity img:hover, #html img:hover,
-#css img:hover, #js img:hover, #jv img:hover, #pcs img:hover {
+.two .logos #html img:hover, #css img:hover,
+#js img:hover, #react img:hover, #sass img:hover, #github image:hover {
     transform: translateY(-0.625em);
     transition: .5s;
 }
@@ -314,21 +328,11 @@ footer i {
     color: #EFF9FE;
     transition: 1s;
     border-radius: 50%;
-} 
-
-footer .social i:hover {
-    background: #EFF9FE;
-    color: #0D3B66;
-    transition: 1s;
-}
-
-footer .social #tt, #github, #ig, #linkedin {
-    display: inline-block;
 }
 
 footer .personal {
     position: relative;
-    display: inline-block;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;

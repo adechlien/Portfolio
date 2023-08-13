@@ -19,37 +19,6 @@ ScrollReveal().reveal('#title', {
     opacity: null
 });
 
-// Two
-ScrollReveal().reveal('.java-things', {
-    delay: 250,
-    duration: 1750,
-    distance: '150%',
-    origin: 'top'
-});
-
-ScrollReveal().reveal('.web-developing', {
-    delay: 250,
-    duration: 1750,
-    distance: '150%',
-    origin: 'bottom'
-});
-
-ScrollReveal().reveal('.game-developing', {
-    delay: 250,
-    duration: 1750,
-    distance: '150%',
-    origin: 'top'
-});
-
-// Three
-
-ScrollReveal().reveal('.projects', {
-    delay: 250,
-    duration: 1750,
-    distance: '150%',
-    origin: 'bottom'
-});
-
 // Mobile Nav
 
 function toggleMenu() {
@@ -58,12 +27,3 @@ function toggleMenu() {
     menuToggle.classList.toggle('active');
     nav.classList.toggle('active');
 }
-
-// var me;
-// for (let i = 10; i < 0; i++) {
-//     me.toOverthink();
-// }
-
-// function toOverthink() {
-//     me = 5;
-// }
