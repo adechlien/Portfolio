@@ -181,27 +181,18 @@ header .nav li a:hover {
     text-transform: uppercase;  
 }
 
-.two .textBox p {
-    color: #F0EAD2;
-    margin-bottom: 2em;
-}
 
 .two h3 {
     font-size: 1.125em;    
     color: #F0EAD2;
 }
 
-.two .logos {
-    display: inline-block;
+.two .skills {
+    display: flex;
+    justify-content: center;
 }
 
-.two .logos .sub-title h2 {
-    font-size: 1.3em;
-    color: #F0EAD2;
-    margin-bottom: 0.25em;
-}
-
-.two .logos .things {
+.two .skills .grid-skills-container {
     border-radius: 2em;
     background: #A98467;
     padding-top: 1.25em;
@@ -209,29 +200,52 @@ header .nav li a:hover {
     margin: 0 0.6em;
     transition: 0.4s;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
 }
 
-.two .logos .java-things, .web-developing, .game-developing {
-    display: inline-block;    
+.two .grid-web-container {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas con tamaño fraccional igual */
+    gap: .875em; /* Espacio entre celdas */
 }
 
-.two .logos #html, #css, #js, #react, #sass, #github {
+.grid-web-container .web-title {
+    grid-row: 1; /* Establecer en la primera fila */
+    grid-column: 1 / span 3; /* Ocupar las 2 columnas */
+}
+
+.two .grid-design-container {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con tamaño fraccional igual */
+    gap: .875em; /* Espacio entre celdas */
+}
+
+.grid-design-container .design-title {
+    grid-row: 1; /* Establecer en la primera fila */
+    grid-column: 1 / span 2; /* Ocupar las 2 columnas */
+}
+
+.two .skills #html, #css, #js, #illustrator, #figma {
     width: 6.25em;
     margin: 0 0.5em;
     transition: 1.5s;
     display: inline-block;
 }
 
-.two .logos #html img, #css img, #js img,
-#react img, #sass img, #github img {
+.two .skills #html img, #css img, #js img,
+#illustrator img, #figma img {
     margin-bottom: 0.3125em;
     width: 5em;
     transition: .5s;
     filter: drop-shadow(0.125em 0.1875em 0.0625em #6c4c34);
 }
 
-.two .logos #html img:hover, #css img:hover,
-#js img:hover, #react img:hover, #sass img:hover, #github image:hover {
+.two .skills #html img:hover, #css img:hover,
+#js img:hover, #illustrator img:hover, #figma img:hover {
     transform: translateY(-0.625em);
     transition: .5s;
 }
@@ -248,13 +262,18 @@ header .nav li a:hover {
 .three .projects {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4.375em;
+    grid-template-columns: repeat(1, 1fr);
+    /*grid-gap: 4.375em;*/
+}
+
+.three .projects .grid-projects-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .three .projects .card {
     text-align: center;
-    color: #0c0d4d;
+    color: #A98467;
     width: 21.875em;
     padding: 1.875em auto;
 }
@@ -274,23 +293,23 @@ header .nav li a:hover {
 .three .projects h3 {
     font-size: 1.3em;
     display: block;
-    color: #0D3B66;
+    color: #A98467;
     font-weight: 500;
 }
 
 .three h3 span {
     font-weight: 800;
-    color: #0D3B66;
+    color: #A98467;
 }
 
 .three .projects .card a {
-    color: #0c0d4d;
+    color: #A98467;
     text-decoration: none;
     font-weight: 500;
 }
 
 .three .title {
-    color: #0D3B66;
+    color: #A98467;
     font-size: 1.8em;
     font-weight: 600;
     text-transform: uppercase;
@@ -302,13 +321,13 @@ header .nav li a:hover {
 }
 
 .three .textBox p {
-    color: #0D3B66;
+    color: #A98467;
     margin-bottom: 2em;
 }
 
 /* Footer */
 footer {
-    background-color: #0D3B66;
+    background-color: #A98467;
     text-align: center;
     display: block;
 }
@@ -319,26 +338,33 @@ footer .title {
     text-transform: uppercase;
     margin-bottom: 1em;
     padding-top: 1.5em;
-    color: #EFF9FE;
+    color: #F0EAD2;
 }
 
 footer i {
-    padding: 0.625em;
+    padding: 0.325em;
     font-size: 1.875em;
-    color: #EFF9FE;
+    color: #F0EAD2;
     transition: 1s;
     border-radius: 50%;
 }
 
-footer .personal {
-    position: relative;
-    display: flex;
+footer .links-container {
+    display: grid;
+    grid-template-columns: repeat(2, 20em);
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+}
+
+/* footer .personal {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto; Dos filas automáticas
+    grid-template-columns: 18em; Dos columnas con tamaño fraccional igual
     width: 100%;
     text-align: center;
-}
+    justify-content: center;
+} */
 
 footer .personal .card {
     position: relative;
@@ -346,14 +372,31 @@ footer .personal .card {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #EFF9FE;
+    color: #F0EAD2;
+}
+
+footer .profesional {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*grid-template-rows: auto auto; Dos filas automáticas */
+    /*grid-template-columns: repeat(2, 1fr); Dos columnas con tamaño fraccional igual */
+    width: 100%;
+    text-align: center;
 }
 
 footer a {
     margin-top: 0.625em;
-    margin: 0.625em 1.25em;
+    margin: 0.325em .5em;
+    border-radius: 2em;
     text-decoration: none;
     transition: .5s;
+}
+
+footer a:hover > i {
+    color: #A98467;
+    background-color: #F0EAD2;
 }
 
 /* Mobile */
@@ -376,29 +419,29 @@ footer a {
         margin-bottom: 1em;
     }
     
-    .two .logos .java-things,
+    .two .skills .java-grid-skills-container,
     .web-developing, 
     .game-developing {
         display: inline;
         padding-bottom: 1.2em;
     }
 
-    .two .logos .java-things .things {
+    .two .skills .java-grid-skills-container .grid-skills-container {
         width: 17.5em;
         margin: 0 auto;
     }
 
-    .two .logos .web-developing .things {
+    .two .skills .web-developing .grid-skills-container {
         width: 24.375em;
         margin: 0 auto;
     }
 
-    .two .logos .game-developing .things {
+    .two .skills .game-developing .grid-skills-container {
         width: 17.5em;
         margin: 0 auto;
     }
 
-    .two .logos .sub-title h2 {
+    .two .skills .sub-title h2 {
         margin-top: 1.25em;
     }
 
@@ -541,26 +584,26 @@ footer a {
     }
 }
 @media only screen and (max-width: 446px) {
-    .two .logos #cs, #unity, #html, #css, #js, #jv, #pcs {
+    .two .skills #cs, #unity, #html, #css, #js, #jv, #pcs {
         width: 6.25em;
         margin-left: 0;
         margin-right: 0;
     }
 
-    .two .logos #cs img, #unity img, #html img, #css img,
+    .two .skills #cs img, #unity img, #html img, #css img,
     #js img, #jv img, #pcs img {
         width: 4.375em;
     }
 
-    .two .logos .java-things .things {
+    .two .skills .java-grid-skills-container .grid-skills-container {
         width: 15.625em;
     }
 
-    .two .logos .web-developing .things {
+    .two .skills .web-developing .grid-skills-container {
         width: 21.875em;
     }
 
-    .two .logos .game-developing .things {
+    .two .skills .game-developing .grid-skills-container {
         width: 15.625em;
     }
 
@@ -573,20 +616,20 @@ footer a {
     }
 }
 @media only screen and (max-width: 386px) {
-    .two .logos #cs, #unity, #html, #css, #js, #jv, #pcs {
+    .two .skills #cs, #unity, #html, #css, #js, #jv, #pcs {
         width: 5.625em;
     }
-    .two .logos .java-things .things {
+    .two .skills .java-grid-skills-container .grid-skills-container {
         width: 12.5em;
         padding: 0.8em 0;
     }
 
-    .two .logos .web-developing .things {
+    .two .skills .web-developing .grid-skills-container {
         width: 18.75em;
         padding: 1.2em 0;
     }
 
-    .two .logos .game-developing .things {
+    .two .skills .game-developing .grid-skills-container {
         width: 12.5em;
         padding: 0.8em 0;
     }
