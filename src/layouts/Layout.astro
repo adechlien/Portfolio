@@ -1,0 +1,179 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="icon" href="src/images/adc.ico">
+		<script src="https://kit.fontawesome.com/6b69f5d989.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="flex flex-col items-center max-w-[640px] mx-4 sm:mx-auto font-dosis bg-[#16161d] text-[#87cefa] list-none no-underline scroll-smooth overflow-x-hidden">
+		<slot />
+		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+	</body>
+
+</html>
+
+<style is:global>
+	<!-- Scroll -->
+	body {
+		scroll-behavior: smooth;
+	}
+
+	<!-- Icons -->
+	.icon {
+		font-size: 4rem;
+	}
+
+	header {
+		animation: lay-down 1s ease-in-out .5s both;
+	}
+
+	@keyframes lay-down {
+		0% {
+			transform: translateY(-100px);
+		}
+
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes rotate-bit {
+		0% {
+			transform: rotate(-180deg);
+		}
+
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes scale-up {
+		0% {
+			transform: scale(0);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	.portrait a {
+		animation: scale-up 1s ease-in-out;
+	}
+
+	.knowledge .html-icon:hover, .knowledge .html-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #ff6a29);
+		color: #ff6a29;
+	}
+
+	/* .icon:hover {
+		filter: drop-shadow(0 0 0.5rem #4ad5fe);
+	} */
+
+	.knowledge .css-icon:hover, .knowledge .css-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #299bff);
+		color: #299bff;
+	}
+
+	.knowledge .js-icon:hover, .knowledge .js-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #f0da50);
+		color: #f0da50;
+	}
+
+	.knowledge .ts-icon:hover, .knowledge .ts-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #0177d1);
+		color: #0177d1;
+	}
+
+	.knowledge .tailwind-icon:hover, .knowledge .tailwind-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #61c2c4);
+		color: #61c2c4;
+	}
+
+	.knowledge .react-icon:hover, .knowledge .react-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #4ad5fe);
+		color: #4ad5fe;
+	}
+
+	.knowledge .nextjs-icon:hover, .knowledge .nextjs-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #aaa);
+		color: #999;
+	}
+
+	.knowledge .node-icon:hover, .knowledge .node-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #91c640);
+		color: #91c640;
+	}
+
+	.knowledge .mongodb-icon:hover, .knowledge .mongodb-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #12914e);
+		color: #12914e;
+	}
+
+	.knowledge .astro-icon:hover, .knowledge .astro-icon:hover + p {
+		scale: 1;
+		filter: drop-shadow(0 0 0.5rem #fa6f1f);
+		color: #fa6f1f;
+	}
+
+	.knowledge .git-icon:hover, .knowledge .git-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #fe4d41);
+		color: #fe4d41;
+	}
+
+	.knowledge .figma-icon:hover, .knowledge .figma-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #9f5cfe);
+		color: #9f5cfe;
+	}
+
+	/* .google-maps-icon {
+		color: #dbdbdb;
+	} */
+
+	.knowledge .python-icon:hover, .knowledge .python-icon:hover + p {
+		filter: drop-shadow(0 0 0.5rem #63a7e3);
+		color: #63a7e3;
+	}
+
+	/* .openai-icon {
+		color: #94c6c5;
+	} */
+
+	/* Scrollbar */
+	::-webkit-scrollbar {
+		width: .5rem;
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: #31313d;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: linear-gradient(to bottom right, #87cefa, #228fd2);
+	}
+
+	/* .projects-list {
+		grid-template-columns: repeat(auto-fill, 1fr);
+	} */
+
+	.projects:hover > i {
+		color: #87cefa;
+	}
+</style>
