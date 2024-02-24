@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Alejandro Hern&aacute;ndez's Portfolio </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="images/AG.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap" rel="stylesheet">
+    <script src="scrollreveal.js"></script>
+    <script src="https://kit.fontawesome.com/6b69f5d989.js" crossorigin="anonymous"></script>
+</head> 
+
+<body id="home">
+    <div class="container">
+        <section class="home" id="home">
+            <header class="">
+                <a href="#" class="adc"> <i class="fa-solid fa-briefcase"></i> ADC </a>
+                <div class="menuToggle" onclick="toggleMenu()"></div>
+                <ul class="nav">
+                    <li><a href="#home" onclick="toggleMenu()"> Home </a></li>
+                    <li><a href="#aboutme" onclick="toggleMenu()"> About Me </a></li>
+                    <li><a href="#projects" onclick="toggleMenu()"> Projects </a></li>
+                    <li><a href="#footer" onclick="toggleMenu()"> Contact </a></li>
+                </ul>
+            </header>
+        </section>         
+        <section class="one">
+            <div class="image" id="myImage">
+                <img src="images/alejandro2.jpg" title="Me">
+            </div>
+            <div class="title" id="title">
+                <h1> Alejandro Hern&aacute;ndez </h1>
+                <h2> Frontend Developer Junior </h2>
+                <p> Hello, I'm a young guy from Colombia who loves the programming. <br> I develop different types of programs focusing on Web Developing ones. </p>                
+                <a class="download-cv" href="images/CV.pdf" download> Download CV </a>
+            </div>          
+        </section>
+        <section class="two" id="aboutme">
+            <br id="aboutme">
+            <h2 class="title"> What I know </h2>
+            <div class="skills">
+                <div class="grid-skills-container">
+                    <div class="grid-web-container">
+                        <h3 class="web-title"> Programming </h3>
+                        
+                        <div id="html">
+                            <img src="images/html-logo.png" title="HTML">
+                            <h3> HTML </h3>
+                        </div>
+                        
+                        <div id="css">
+                            <img src="images/css-logo.png" title="CSS">                    
+                            <h3> CSS </h3>
+                        </div>
+                        
+                        <div id="js">
+                            <img src="images/javascript-logo.png" title="JavaScript">                            
+                            <h3> JavaScript </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="grid-design-container">
+                        <h3 class="design-title"> Design </h3>
+
+                        <div id="illustrator">
+                            <img src="images/illustrator-logo.png" title="Adobe Illustrator">
+                            <h3> Adobe Illustrator </h3>
+                        </div>
+                        
+                        <div id="figma">
+                            <img src="images/figma-logo.png" title="Figma"> 
+                            <h3> Figma </h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br id="projects"><br>
+        </section>
+        <section class="three">
+            <h2 class="title"> Projects </h2>
+            <div class="textBox">
+                <p> The Programs I developed. </p>
+            </div>
+            <div class="projects">    
+
+                <div class="grid-projects-container">
+
+                    <div class="card galy">
+                        <div class="images">
+                            <img src="images/GY3.png" title="Galy"> 
+                        </div>                   
+                        <h3 class="Campesino"> <span> Galy </span> - Wallpapers Gallery </h3>
+                        <p> Download beautiful wallpapers! </p>
+                        <a href="https://galy.netlify.app/" target="_blank"> <i class="fa-solid fa-eye"></i> Visit here </a>
+                    </div>
+                    
+                    <div class="card leggiamo">
+                        <div class="images">
+                            <img src="images/leggiamo-logo.png" title="Leggiamo"> 
+                        </div>                                     
+                        <h3 class="leggiamo"> <span> Leggiamo </span> - Read stories </h3>
+                        <p> Written by me! </p>
+                        <a href="https://leggiamo.netlify.app/" target="_blank"> <i class="fa-solid fa-eye"></i> Visit here </a>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <br>
+        </section>
+        <footer id="footer">
+
+            <div class="title">
+                <h2> Contact </h2>
+            </div>
+            
+            <div class="links-container">
+                <div class="personal">
+                    
+                    <div class="card" id="gmail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p> alejandrohernandezpolo@gmail.com </p>
+                    </div>
+    
+                </div>
+    
+                <div class="profesional">
+                    
+                    <div id="tt">
+                        <a href="https://twitter.com/YourFriendlyADC" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+    
+                    <div id="github">
+                            <a href="https://github.com/YourFriendlyADC" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+    
+                    <div id="ig">
+                        <a href="https://instagram.com/YourFriendlyADC" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+    
+                    <div id="linkedin">
+                        <a href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-polo-71709a245/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+    
+                </div>
+
+            </div>
+            <br>
+        </footer>        
+    </div>
+    <!-- JavaScript  -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
