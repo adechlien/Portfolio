@@ -4,7 +4,9 @@ export default {
 	theme: {
 		extend: {},
 		fontFamily: {
-      'dosis': ['Dosis', 'ui-sans-serif', 'system-ui']
+      'dosis': ['Dosis', 'ui-sans-serif', 'system-ui'],
+			'overpass': ['Overpass', 'ui-sans-serif', 'system-ui'],
+			'barlow': ['Barlow', 'ui-sans-serif', 'system-ui']
     },
 		boxShadow: {
 			'barShadow': '#121212 2px 2px 5px 0px',

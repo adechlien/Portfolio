@@ -10,17 +10,17 @@ import Certificate from '../components/Certificate.astro';
 	<header class="flex flex-row justify-evenly items-center my-3 mx-0 bg-[#54506066] rounded-md shadow backdrop-blur w-[95%] sm:w-[660px] fixed z-10">
         <a class="text-[#fff] font-medium my-3 mx-0" href="#about-me">About me</a>
         <a class="text-[#fff] font-medium my-3 mx-0" href="#knowledges">Skills</a>
-        <img src="/images/adc-logo.png" alt="Logo" class="w-8 hidden md:flex">
+        <img src="/adc-logo.png" alt="Logo" class="w-8 hidden md:flex">
         <a class="text-[#fff] font-medium my-3 mx-0" href="#projects">Projects</a>
         <a class="text-[#fff] font-medium my-3 mx-0" href="#contact">Contact</a>
     </header>
 
     <section class="portrait flex flex-col justify-center items-center text-2xl font-medium h-[100vh] gap-10 mx-4" id="portrait">
-        <img class="w-[45%] md:w-[40%] rounded-full mt-16" src="/images/alejandro.jpg" alt="me">
+        <img class="w-[45%] md:w-[40%] rounded-full mt-16" src="/alejandro.jpg" alt="me">
         <div class="my-description flex flex-col justify-end items-center">
             <h2 class="text-2xl text-[#fff]">Alejandro J. Hernández Polo</h3>
-            <p class="text-[#E7FAD7] text-xl">Frontend Developer Junior</p>  
-            <div class="contact flex flex-row justify-center items-start gap-2 md:gap-5 my-4 mx-0 text-[#72a748] rounded-lg">
+            <p class="text-[#c69ad3] text-xl">Frontend Developer Junior</p>  
+            <div class="contact flex flex-row justify-center items-start gap-2 md:gap-5 my-4 mx-0 text-[#8353b3] rounded-lg">
                 <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://github.com/YourFriendlyADC" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
                 <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-polo/" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
                 <a class="download-cv flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="images/CV.pdf" download="" rel="noopener"><i class="ti ti-file-cv"></i></a>
@@ -29,12 +29,12 @@ import Certificate from '../components/Certificate.astro';
         </div>
     </section>
 
-    <section class="about-me flex flex-col justify-center items-center text-[#bfdbf7] mx-4 w-[100%]" id="about-me">
+    <section class="about-me flex flex-col justify-center items-center mx-4 w-[100%]" id="about-me">
         <div class="my-information flex flex-col justify-evenly items-start">
             <!-- <img class="my-2 rounded-lg w-[40%]" src="/images/alejandro-4.jpg" alt="me" title="me"> -->
             <div class="my-information-text flex flex-col justify-center items-start gap-2">
                 <h2 class="text-3xl text-[#fff] my-2 mx-0 font-bold"> About me </h2>
-                <p class="text-[#CCD5AE]">
+                <p class="text-[#c9aed5]">
                     Young adult studying <span class="text-[#fff] font-medium">Systems Engineering</span> at the <span class="text-[#fff] font-medium">Universidad del Norte</span> in Colombia. Amazed about visually appealing web designs, focused on Frontend development, using <span class="text-[#fff] font-medium">UX/UI</span> principles.<br><br>
                     <span class="text-[#fff] font-medium">Since 2022</span>, I've been on a cool journey to level up my programming and web development skills. <span class="text-[#fff] font-medium">My goal is to become a Fullstack Developer</span>, combining my skills in Frontend and Backend development to make awesome digital experiences.<br><br>
                     When I'm not coding, I chill out with outdoor stuff like <span class="text-[#fff] font-medium">Calisthenics</span> and <span class="text-[#fff] font-medium">Basketball</span>. Also, like reading <span class="text-[#fff] font-medium">Spider-Man</span> comics, my favorite superhero, Colombian literature and exploring the fascinating world of <a href="https://letterboxd.com/YourFriendlyADC/" class="text-[#fff] font-medium underline">Cinema</a>.
@@ -45,7 +45,7 @@ import Certificate from '../components/Certificate.astro';
 
     <section class="knowledges flex flex-col items-start justify-center py-8 px-0 w-[100%] mx-4" id="knowledges">
         <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Skills</h2>
-        <div class="knowledges-list grid grid-cols-4 sm:grid-cols-6 justify-baseline items-center text-[#97cb6c] w-[100%] gap-8 text-center">
+        <div class="knowledges-list grid grid-cols-4 sm:grid-cols-6 justify-baseline items-center text-[#ad6ccb] w-[100%] gap-8 text-center">
 			<Knowledge iconBrandName="html5" iconName="html" pName="HTML"/>
 			<Knowledge iconBrandName="css3" iconName="css" pName="CSS"/>
 			<Knowledge iconBrandName="javascript" iconName="js" pName="JavaScript"/>
@@ -68,7 +68,7 @@ import Certificate from '../components/Certificate.astro';
     <section class="projects grid items-center py-10 px-0 w-[100%] mx-4" id="projects">
         <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Latest Projects</h2>
         <div class="projects-list grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Project projectImage="leggiamo-icon.png" projectName="Leggiamo" projectDescription="Read latest stories written by me." projectURL="https://leggiamo.netlify.app/" projectRepo="https://github.com/YourFriendlyADC/Leggiamo"></Project>
+            <Project projectImage="leggiamo-icon.png" projectName="Leggiamo" projectDescription="Read latest stories written by me." projectURL="https://leggiamo.vercel.app/" projectRepo="https://github.com/YourFriendlyADC/Leggiamo"></Project>
             <Project projectImage="galy.png" projectName="Galy" projectDescription="Wallpapers for Mobile and Desktop." projectURL="https://galy.netlify.app/" projectRepo="https://github.com/YourFriendlyADC/Galy">
 				<i class='ti ti-brand-tailwind tailwind-icon'></i>
 				<iconify-icon icon='devicon-plain:astro' class='astro-icon icon' width='20'></iconify-icon>
@@ -76,9 +76,6 @@ import Certificate from '../components/Certificate.astro';
             <!-- <Project projectImage="considerafly-logo.png" projectName="ConsideraFly" projectDescription="Look for cities and learn about them!" projectURL="" projectRepo="https://github.com/YourFriendlyADC/ConsideraFly">				
 				<i class='ti ti-brand-google-maps google-maps-icon'></i>
 			</Project> -->
-            <!-- <Project projectImage="pory.png" projectName="Pory" projectDescription="Pomodoro Timer for Study." projectURL="" projectRepo="https://github.com/YourFriendlyADC/Pory"></Project> -->
-            <!-- <Project projectImage="webie-logo.png" projectName="Webia" projectDescription="How do you know about the WebHead?" projectURL="" projectRepo=""></Project> -->
-            <!-- <Project projectImage="webie-logo.png" projectName="Webie" projectDescription="Get fun with the Spideys!" projectURL="" projectRepo=""></Project> -->
             <!-- <Project projectImage="rodesentry.png" projectName="RodeSentry" projectDescription="Micro-Sleep Detector" projectURL="" projectRepo="">
                 <i class='ti ti-brand-python python-icon'></i>
                 <i class='ti ti-brand-openai openai-icon'></i>
@@ -124,6 +121,6 @@ import Certificate from '../components/Certificate.astro';
     </section> -->
 
     <footer class="mx-auto">
-        <p class="text-[#E7FAD7] font-medium mt-8 mb-0 mx-2 py-2 px-0">2023 Alejandro Hernández Polo | YourFriendlyADC</p>
+        <p class="text-[#ead7fa] font-medium mt-8 mb-0 mx-2 py-2 px-0">2023 Alejandro Hernández Polo | YourFriendlyADC</p>
     </footer>
 </Layout>
