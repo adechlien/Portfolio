@@ -8,11 +8,11 @@ import Certificate from '../components/Certificate.astro';
 <Layout title="Alejandro Hernández's Portfolio">
 
 	<header class="flex flex-row justify-evenly items-center my-3 mx-0 bg-[#54506066] rounded-md shadow backdrop-blur w-[95%] sm:w-[660px] fixed z-10">
+        <img src="/adc-logo.png" alt="Logo" class="w-8 hidden md:flex">
         <a class="text-[#fff] font-medium my-3 mx-0" href="#about-me">About me</a>
         <a class="text-[#fff] font-medium my-3 mx-0" href="#knowledges">Skills</a>
-        <img src="/adc-logo.png" alt="Logo" class="w-8 hidden md:flex">
         <a class="text-[#fff] font-medium my-3 mx-0" href="#projects">Projects</a>
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#contact">Contact</a>
+        <!-- <a class="text-[#fff] font-medium my-3 mx-0" href="#contact">Contact</a> -->
     </header>
 
     <section class="portrait flex flex-col justify-center items-center text-2xl font-medium h-[100vh] gap-10 mx-4" id="portrait">
@@ -95,7 +95,7 @@ import Certificate from '../components/Certificate.astro';
     </section>
 
     <section class="certifications text-left mx-4 w-[100%]">
-        <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Certificates</h2>
+        <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Certifications</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <Certificate certificateURL="css" certificateName="Curso de CSS" certificateProvider="códigofacilito" certificateSpan=""></Certificate>
             <Certificate certificateURL="tailwind" certificateName="Curso de Introducción a TailwindCSS" certificateProvider="códigofacilito" certificateSpan="sm:col-span-2"></Certificate>
