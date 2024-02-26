@@ -16,7 +16,7 @@ import Certificate from '../components/Certificate.astro';
     </header>
 
     <section class="portrait flex flex-col justify-center items-center text-2xl font-medium h-[100vh] gap-10 mx-4" id="portrait">
-        <img class="w-[45%] md:w-[40%] rounded-full mt-16" src="/alejandro.jpg" alt="me">
+        <img class="w-[45%] md:w-[35%] rounded-full mt-16" src="/alejandro.jpg" alt="me">
         <div class="my-description flex flex-col justify-end items-center">
             <h2 class="text-2xl text-[#fff]">Alejandro J. Hernández Polo</h3>
             <p class="text-[#c69ad3] text-xl">Frontend Developer Junior</p>  
@@ -45,8 +45,9 @@ import Certificate from '../components/Certificate.astro';
 
     <section class="knowledges flex flex-col items-start justify-center py-8 px-0 w-[100%] mx-4" id="knowledges">
         <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Skills</h2>
-        <div class="knowledges-list grid grid-cols-4 sm:grid-cols-6 justify-baseline items-center text-[#ad6ccb] w-[100%] gap-8 text-center">
-			<Knowledge iconBrandName="html5" iconName="html" pName="HTML"/>
+        <span class="text-xl text-[#ead7fa] my-4 mx-0 font-bold">Frontend</span>
+        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#ad6ccb] w-[100%] gap-8 text-center mb-4">
+            <Knowledge iconBrandName="html5" iconName="html" pName="HTML"/>
 			<Knowledge iconBrandName="css3" iconName="css" pName="CSS"/>
 			<Knowledge iconBrandName="javascript" iconName="js" pName="JavaScript"/>
 			<!-- <Knowledge iconBrandName="typescript" iconName="ts" pName="TypeScript"/> -->
@@ -60,8 +61,15 @@ import Certificate from '../components/Certificate.astro';
 				<p class="duration-500">Astro</p>
 			</div>
             <!-- <Knowledge iconBrandName="python" iconName="python" pName="Python"/> -->
-			<Knowledge iconBrandName="git" iconName="git" pName="Git"/>
-			<!-- <Knowledge iconBrandName="figma" iconName="figma" pName="Figma"/> -->
+        </div>
+        <span class="text-xl text-[#ead7fa] my-4 mx-0 font-bold">Tools</span>
+        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#ad6ccb] w-[100%] gap-8 text-center">
+            <Knowledge iconBrandName="git" iconName="git" pName="Git"/>
+            <div class="knowledge flex flex-col justify-center items-center text-center gap-2">
+                <iconify-icon icon="simple-icons:overleaf" class="overleaf-icon icon text-5xl duration-500"></iconify-icon>
+                <p class="duration-500">Overleaf</p>
+            </div>
+            <Knowledge iconBrandName="figma" iconName="figma" pName="Figma"/>
         </div>
     </section>
 
