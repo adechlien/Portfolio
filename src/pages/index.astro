@@ -19,8 +19,8 @@ import Certificate from '../components/Certificate.astro';
         <img class="w-[60%] md:w-[35%] rounded-full mt-16" src="/alejandro.jpg" alt="me">
         <div class="my-description flex flex-col justify-end items-center">
             <h2 class="text-2xl text-[#fff]">Alejandro J. Hernández Polo</h3>
-            <p class="text-[#c69ad3] text-xl">Frontend Developer Junior</p>  
-            <div class="contact flex flex-row justify-center items-start gap-2 md:gap-5 my-4 mx-0 text-[#8353b3] rounded-lg">
+            <p class="text-[#8b96c9] text-xl">Frontend Developer Junior</p>  
+            <div class="contact flex flex-row justify-center items-start gap-2 md:gap-5 my-4 mx-0 text-[#536eb3] rounded-lg">
                 <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://github.com/YourFriendlyADC" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
                 <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-polo/" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
                 <!-- <a class="download-cv flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="images/CV.pdf" download="" rel="noopener"><i class="ti ti-file-cv"></i></a> -->
@@ -34,10 +34,10 @@ import Certificate from '../components/Certificate.astro';
             <!-- <img class="my-2 rounded-lg w-[40%]" src="/images/alejandro-4.jpg" alt="me" title="me"> -->
             <div class="my-information-text flex flex-col justify-center items-start gap-2">
                 <h2 class="text-3xl text-[#fff] my-2 mx-0 font-bold"> About me </h2>
-                <p class="text-[#c9aed5]">
+                <p class="text-[#8a98cf]">
                     Young adult studying <span class="text-[#fff] font-medium">Systems Engineering</span> at the <span class="text-[#fff] font-medium">Universidad del Norte</span> in Colombia. Amazed about visually appealing web designs, focused on Frontend development, using <span class="text-[#fff] font-medium">UX/UI</span> principles.<br><br>
                     <span class="text-[#fff] font-medium">Since 2022</span>, I've been on a cool journey to level up my programming and web development skills. <span class="text-[#fff] font-medium">My goal is to become a Fullstack Developer</span>, combining my skills in Frontend and Backend development to make awesome digital experiences.<br><br>
-                    When I'm not coding, I chill out with outdoor stuff like <span class="text-[#fff] font-medium">Calisthenics</span> and <span class="text-[#fff] font-medium">Basketball</span>. Also, like reading <span class="text-[#fff] font-medium">Spider-Man</span> comics, my favorite superhero, Colombian literature and exploring the fascinating world of <a href="https://letterboxd.com/YourFriendlyADC/" class="text-[#fff] font-medium underline">Cinema</a>.
+                    When I'm not coding, I chill out with outdoor stuff like <span class="text-[#fff] font-medium">Calisthenics</span> and <span class="text-[#fff] font-medium">Basketball</span>. Also, like reading <span class="text-[#fff] font-medium">Spider-Man</span> comics, my favorite superhero, Colombian literature and exploring the fascinating world of <a href="https://letterboxd.com/YourFriendlyADC/" class="text-[#fff] font-medium underline" target="_blank">Cinema</a>.
                 </p>
             </div>
         </div>
@@ -46,29 +46,22 @@ import Certificate from '../components/Certificate.astro';
     <section class="knowledges flex flex-col items-start justify-center py-8 px-0 w-[100%] mx-4" id="knowledges">
         <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Skills</h2>
         <span class="text-xl text-[#ead7fa] my-4 mx-0 font-bold">Frontend</span>
-        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#ad6ccb] w-[100%] gap-8 text-center mb-4">
+        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center mb-4">
             <Knowledge iconBrandName="html5" iconName="html" pName="HTML"/>
 			<Knowledge iconBrandName="css3" iconName="css" pName="CSS"/>
 			<Knowledge iconBrandName="javascript" iconName="js" pName="JavaScript"/>
 			<!-- <Knowledge iconBrandName="typescript" iconName="ts" pName="TypeScript"/> -->
 			<Knowledge iconBrandName="tailwind" iconName="tailwind" pName="Tailwind"/>
+			<Knowledge iconBrandName="astro" iconName="astro" pName="Astro"/>
 			<!-- <Knowledge iconBrandName="react" iconName="react" pName="ReactJS"/> -->
 			<!-- <Knowledge iconBrandName="nextjs" iconName="nextjs" pName="NextJS"/> -->
 			<!-- <Knowledge iconBrandName="nodejs" iconName="node" pName="NodeJS"/>
 			<Knowledge iconBrandName="mongodb" iconName="mongodb" pName="MongoDB"/> -->
-			<div class="knowledge flex flex-col justify-center items-center text-center gap-2">
-                <iconify-icon icon="devicon-plain:astro" class="astro-icon icon text-5xl duration-500"></iconify-icon>
-				<p class="duration-500">Astro</p>
-			</div>
             <!-- <Knowledge iconBrandName="python" iconName="python" pName="Python"/> -->
         </div>
         <span class="text-xl text-[#ead7fa] my-4 mx-0 font-bold">Tools</span>
-        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#ad6ccb] w-[100%] gap-8 text-center">
+        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center">
             <Knowledge iconBrandName="git" iconName="git" pName="Git"/>
-            <div class="knowledge flex flex-col justify-center items-center text-center gap-2">
-                <iconify-icon icon="simple-icons:overleaf" class="overleaf-icon icon text-5xl duration-500"></iconify-icon>
-                <p class="duration-500">Overleaf</p>
-            </div>
             <Knowledge iconBrandName="figma" iconName="figma" pName="Figma"/>
         </div>
     </section>
@@ -79,7 +72,7 @@ import Certificate from '../components/Certificate.astro';
             <Project projectImage="leggiamo-icon.png" projectName="Leggiamo" projectDescription="Read latest stories written by me." projectURL="https://leggiamo.vercel.app/" projectRepo="https://github.com/YourFriendlyADC/Leggiamo"></Project>
             <Project projectImage="galy.png" projectName="Galy" projectDescription="Wallpapers for Mobile and Desktop." projectURL="https://galy.netlify.app/" projectRepo="https://github.com/YourFriendlyADC/Galy">
 				<i class='ti ti-brand-tailwind tailwind-icon'></i>
-				<iconify-icon icon='devicon-plain:astro' class='astro-icon icon' width='20'></iconify-icon>
+				<i class='ti ti-brand-astro astro-icon'></i>
 			</Project>
             <!-- <Project projectImage="considerafly-logo.png" projectName="ConsideraFly" projectDescription="Look for cities and learn about them!" projectURL="" projectRepo="https://github.com/YourFriendlyADC/ConsideraFly">				
 				<i class='ti ti-brand-google-maps google-maps-icon'></i>
@@ -129,6 +122,6 @@ import Certificate from '../components/Certificate.astro';
     </section> -->
 
     <footer class="mx-auto">
-        <p class="text-[#ead7fa] text-sm sm:text-base font-medium mt-8 mb-0 mx-2 py-2 px-0">2023 Alejandro Hernández Polo | YourFriendlyADC</p>
+        <p class="text-[#d7d7fa] text-sm sm:text-base font-medium mt-8 mb-0 mx-2 py-2 px-0">2023 Alejandro Hernández Polo | YourFriendlyADC</p>
     </footer>
 </Layout>
