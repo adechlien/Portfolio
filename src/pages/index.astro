@@ -1,106 +1,195 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Knowledge from '../components/Knowledge.astro';
-import Project from '../components/Project.astro';
-import Certificate from '../components/Certificate.astro';
+import Layout from "../layouts/Layout.astro";
+import Knowledge from "../components/Knowledge.astro";
+import Project from "../components/Project.astro";
+import Certificate from "../components/Certificate.astro";
 ---
 
 <Layout title="Alejandro Hernández's Portfolio">
+    <!-- <header
+        class="flex flex-row justify-evenly items-center my-3 mx-0 bg-[#54506066] rounded-md shadow backdrop-blur w-[95%] sm:w-[660px] fixed z-10"
+    >
+        <img src="/adc-logo.png" alt="Logo" class="w-8 hidden md:flex" />
+        <a class="text-[#fff] font-medium my-3 mx-0" href="#about-me"
+            >About me</a
+        >
+        <a class="text-[#fff] font-medium my-3 mx-0" href="#knowledges"
+            >Skills</a
+        >
+        <a class="text-[#fff] font-medium my-3 mx-0" href="#projects"
+            >Projects</a
+        >
+        <!-- <a class="text-[#fff] font-medium my-3 mx-0" href="#contact">Contact</a>
+    </header> -->
 
-	<header class="flex flex-row justify-evenly items-center my-3 mx-0 bg-[#54506066] rounded-md shadow backdrop-blur w-[95%] sm:w-[660px] fixed z-10">
-        <img src="/adc-logo.png" alt="Logo" class="w-8 hidden md:flex">
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#about-me">About me</a>
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#knowledges">Skills</a>
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#projects">Projects</a>
-        <!-- <a class="text-[#fff] font-medium my-3 mx-0" href="#contact">Contact</a> -->
-    </header>
-
-    <section class="portrait flex flex-col justify-center items-center text-2xl font-medium h-[100vh] gap-10 mx-4" id="portrait">
-        <img class="w-[60%] md:w-[35%] rounded-full mt-16" src="/alejandro.jpg" alt="me">
+    <section
+        class="portrait flex flex-col justify-center items-center text-2xl font-medium h-[100vh] gap-8 mx-4"
+        id="portrait"
+    >
+        <img class="w-[60%] md:w-[35%] rounded-full" src="/alejandro.jpg" alt="me"/>
         <div class="my-description flex flex-col justify-end items-center">
-            <h2 class="text-2xl text-[#fff]">Alejandro J. Hernández Polo</h3>
-            <p class="text-[#8b96c9] text-xl">Frontend Developer Junior</p>  
-            <div class="contact flex flex-row justify-center items-start gap-2 md:gap-5 my-4 mx-0 text-[#536eb3] rounded-lg">
-                <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://github.com/YourFriendlyADC" target="_blank" rel="noopener"><i class="ti ti-brand-github"></i></a>
-                <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-polo/" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin"></i></a>
+            <h2 class="text-2xl text-[#fff]">Alejandro J. Hernández Polo</h2>
+            <p class="text-[#8b96c9] text-xl">Frontend Developer</p>
+            <div
+                class="contact flex flex-row justify-center items-start gap-2 md:gap-5 mt-4 mx-0 text-[#536eb3] rounded-lg"
+            >
+                <a
+                    class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]"
+                    href="https://github.com/Adechlien"
+                    target="_blank"
+                    rel="noopener"><i class="ti ti-brand-github"></i></a
+                >
+                <a
+                    class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]"
+                    href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-polo/"
+                    target="_blank"
+                    rel="noopener"><i class="ti ti-brand-linkedin"></i></a
+                >
                 <!-- <a class="download-cv flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="images/CV.pdf" download="" rel="noopener"><i class="ti ti-file-cv"></i></a> -->
-                <a class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="https://www.instagram.com/yourfriendlyadc/" target="_blank" rel="noopener"><i class="ti ti-brand-instagram"></i></a>
+                <a
+                    class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]"
+                    href="https://www.instagram.com/yourfriendlyadc/"
+                    target="_blank"
+                    rel="noopener"><i class="ti ti-brand-instagram"></i></a
+                >
             </div>
         </div>
     </section>
 
-    <section class="about-me flex flex-col justify-center items-center mx-4 w-[100%]" id="about-me">
+    <!-- About me section -->
+    <section
+        class="about-me flex flex-col justify-center items-center mx-4 w-full pb-4" id="about-me">
         <div class="my-information flex flex-col justify-evenly items-start">
             <!-- <img class="my-2 rounded-lg w-[40%]" src="/images/alejandro-4.jpg" alt="me" title="me"> -->
-            <div class="my-information-text flex flex-col justify-center items-start gap-2">
-                <h2 class="text-3xl text-[#fff] my-2 mx-0 font-bold"> About me </h2>
+            <div
+                class="my-information-text flex flex-col justify-center items-start gap-2"
+            >
+                <h2 class="text-3xl text-[#fff] my-2 mx-0 font-bold">
+                    About me
+                </h2>
                 <p class="text-[#8a98cf]">
-                    Young adult studying <span class="text-[#fff] font-medium">Systems Engineering</span> at the <span class="text-[#fff] font-medium">Universidad del Norte</span> in Colombia. Amazed about visually appealing web designs, focused on Frontend development, using <span class="text-[#fff] font-medium">UX/UI</span> principles.<br><br>
-                    <span class="text-[#fff] font-medium">Since 2022</span>, I've been on a cool journey to level up my programming and web development skills. <span class="text-[#fff] font-medium">My goal is to become a Fullstack Developer</span>, combining my skills in Frontend and Backend development to make awesome digital experiences.<br><br>
-                    When I'm not coding, I chill out with outdoor stuff like <span class="text-[#fff] font-medium">Calisthenics</span> and <span class="text-[#fff] font-medium">Basketball</span>. Also, like reading <span class="text-[#fff] font-medium">Spider-Man</span> comics, my favorite superhero, Colombian literature and exploring the fascinating world of <a href="https://letterboxd.com/YourFriendlyADC/" class="text-[#fff] font-medium underline" target="_blank">Cinema</a>.
+                    Young adult studying <span class="text-[#fff] font-medium">Systems Engineering</span> at the <span class="text-[#fff] font-medium"
+                    >Universidad del Norte <i class="ti ti-school"></i></span>
+                    in Colombia. Amazed about visually appealing web designs, focused
+                    on Frontend development, using <span class="text-[#fff] font-medium">UX/UI</span>
+                    principles.<br /><br />
+                    <span class="text-[#fff] font-medium">Since 2022</span>,
+                    I've been on a cool journey to level up my programming and
+                    web development skills. <span class="text-[#fff] font-medium"
+                        >My goal is to become a Fullstack Developer <i class="ti ti-target-arrow"></i></span
+                    >, combining my skills in Frontend and Backend development
+                    to make awesome digital experiences.<br /><br />
+                    When I'm not coding, I chill out playing <span class="text-[#fff] font-medium">Tennis <i class="ti ti-ball-tennis"></i></span
+                    >. Also, like reading <span class="text-[#fff] font-medium"
+                        >Spider-Man <i class="ti ti-spider"></i></span
+                    > comics, my favorite superhero, <span class="text-[#fff] font-medium">Colombian literature <i class="ti ti-books"></i> </span> and exploring
+                    the fascinating world of <a
+                        href="https://letterboxd.com/Adechlien/"
+                        class="text-[#fff] font-medium underline"
+                        target="_blank">Cinema <i class="ti ti-movie"></i></a
+                    >.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="knowledges flex flex-col items-start justify-center py-8 px-0 w-[100%] mx-4" id="knowledges">
+    <!-- Skills section -->
+    <section
+        class="flex flex-col items-start justify-center py-4 px-0 w-full mx-4">
         <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Skills</h2>
-        <span class="text-xl text-[#ead7fa] my-4 mx-0 font-bold">Frontend</span>
-        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center mb-4">
-            <Knowledge iconBrandName="html5" iconName="html" pName="HTML"/>
-			<Knowledge iconBrandName="css3" iconName="css" pName="CSS"/>
-			<Knowledge iconBrandName="javascript" iconName="js" pName="JavaScript"/>
-			<!-- <Knowledge iconBrandName="typescript" iconName="ts" pName="TypeScript"/> -->
-			<Knowledge iconBrandName="tailwind" iconName="tailwind" pName="Tailwind"/>
-			<Knowledge iconBrandName="astro" iconName="astro" pName="Astro"/>
-			<!-- <Knowledge iconBrandName="react" iconName="react" pName="ReactJS"/> -->
-			<!-- <Knowledge iconBrandName="nextjs" iconName="nextjs" pName="NextJS"/> -->
-			<!-- <Knowledge iconBrandName="nodejs" iconName="node" pName="NodeJS"/>
+        <span class="text-xl text-[#8a98cf] my-4 mx-0 font-bold">Frontend</span>
+        <div
+            class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center mb-4"
+        >
+            <Knowledge iconBrandName="html5" iconName="html" pName="HTML" />
+            <Knowledge iconBrandName="css3" iconName="css" pName="CSS" />
+            <Knowledge iconBrandName="javascript" iconName="js" pName="JavaScript"/>
+            <Knowledge iconBrandName="typescript" iconName="ts" pName="TypeScript"/>
+            <Knowledge iconBrandName="tailwind" iconName="tailwind" pName="Tailwind"/>
+            <Knowledge iconBrandName="astro" iconName="astro" pName="Astro" />
+            <!-- <Knowledge iconBrandName="react" iconName="react" pName="ReactJS"/> -->
+            <!-- <Knowledge iconBrandName="nextjs" iconName="nextjs" pName="NextJS"/> -->
+            <!-- <Knowledge iconBrandName="nodejs" iconName="node" pName="NodeJS"/>
 			<Knowledge iconBrandName="mongodb" iconName="mongodb" pName="MongoDB"/> -->
-            <!-- <Knowledge iconBrandName="python" iconName="python" pName="Python"/> -->
+            <Knowledge iconBrandName="python" iconName="python" pName="Python"/>
         </div>
-        <span class="text-xl text-[#ead7fa] my-4 mx-0 font-bold">Tools</span>
-        <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center">
-            <Knowledge iconBrandName="git" iconName="git" pName="Git"/>
-            <Knowledge iconBrandName="figma" iconName="figma" pName="Figma"/>
-        </div>
-    </section>
-
-    <section class="projects grid items-center py-10 px-0 w-[100%] mx-4" id="projects">
-        <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Latest Projects</h2>
-        <div class="projects-list grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <Project projectImage="leggiamo-icon.png" projectName="Leggiamo" projectDescription="Read latest stories written by me." projectURL="https://leggiamo.vercel.app/" projectRepo="https://github.com/YourFriendlyADC/Leggiamo"></Project>
-            <Project projectImage="galy.png" projectName="Galy" projectDescription="Wallpapers for Mobile and Desktop." projectURL="https://galy.netlify.app/" projectRepo="https://github.com/YourFriendlyADC/Galy">
-				<i class='ti ti-brand-tailwind tailwind-icon'></i>
-				<i class='ti ti-brand-astro astro-icon'></i>
-			</Project>
-            <!-- <Project projectImage="considerafly-logo.png" projectName="ConsideraFly" projectDescription="Look for cities and learn about them!" projectURL="" projectRepo="https://github.com/YourFriendlyADC/ConsideraFly">				
-				<i class='ti ti-brand-google-maps google-maps-icon'></i>
-			</Project> -->
-            <!-- <Project projectImage="rodesentry.png" projectName="RodeSentry" projectDescription="Micro-Sleep Detector" projectURL="" projectRepo="">
-                <i class='ti ti-brand-python python-icon'></i>
-                <i class='ti ti-brand-openai openai-icon'></i>
-            </Project> -->
-            <!-- <a href="" class="text-center bg-[#333343] text-[#E7FAD7] sm:col-span-2 py-4 rounded-md">
-                See all projects
-            </a> -->
+        <span class="text-xl text-[#8a98cf] my-4 mx-0 font-bold">Tools</span>
+        <div
+            class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center"
+        >
+            <Knowledge iconBrandName="git" iconName="git" pName="Git" />
+            <Knowledge iconBrandName="figma" iconName="figma" pName="Figma" />
         </div>
     </section>
 
-    <section class="certifications text-left mx-4 w-[100%]">
-        <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Certifications</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <Certificate certificateURL="css" certificateName="Curso de CSS" certificateProvider="códigofacilito" certificateSpan=""></Certificate>
-            <Certificate certificateURL="tailwind" certificateName="Curso de Introducción a TailwindCSS" certificateProvider="códigofacilito" certificateSpan="sm:col-span-2"></Certificate>
-            <Certificate certificateURL="js" certificateName="Curso Profesional de JavaScript" certificateProvider="códigofacilito" certificateSpan="sm:col-span-2"></Certificate>
-            <Certificate certificateURL="ts" certificateName="Curso de TypeScript" certificateProvider="códigofacilito" certificateSpan=""></Certificate>
-            <!-- <Certificate certificateURL="" certificateName="Mejor Proyecto Geo Expo Fisica 2023"certificateProvider="Universidad del Norte" certificateSpan="sm:col-span-3"></Certificate> -->
-            <Certificate certificateURL="git" certificateName="Curso Profesional de Git" certificateProvider="códigofacilito" certificateSpan=""></Certificate>
-            <Certificate certificateURL="design" certificateName="Curso de Diseño para Programadores" certificateProvider="códigofacilito" certificateSpan="sm:col-span-2"></Certificate>
-        </div>
-    </section>
+    <!-- Projects Sections -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-4 w-full">
+            <h2 class="text-3xl text-left text-[#fff] my-4 mx-0 font-bold col-span-2">
+                Latest Projects
+            </h2>
+            <Project
+                projectName="Leggiamo"
+                projectImage="leggiamo-icon.png"
+                projectDescription="Read latest stories written by me."
+                projectURL="https://leggiamo.vercel.app/"
+                projectRepo="https://github.com/Adechlien/Leggiamo"
+            >
+                <i class="ti ti-brand-typescript ts-icon"></i>
+            </Project>
+            <Project
+                projectImage="hess-logo.png"
+                projectName="Hess"
+                projectDescription="Guess the hexadecimal code of the color!"
+                projectURL="https://hess.vercel.app/"
+                projectRepo="https://github.com/Adechlien/Hess"
+            >
+            </Project>
+        </section>
 
-    <!-- <section class="contact w-full" id="contact">
+    <!-- Certifications Sections -->
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 w-full">
+            <h2 class="text-3xl text-left text-[#fff] my-4 mx-0 font-bold col-span-3">
+                Certifications
+            </h2>
+            <Certificate
+                certificateURL="css"
+                certificateName="Curso de CSS"
+                certificateProvider="códigofacilito"
+                certificateSpan=""
+            />
+            <Certificate
+                certificateURL="tailwind"
+                certificateName="Curso de Introducción a TailwindCSS"
+                certificateProvider="códigofacilito"
+                certificateSpan="sm:col-span-2"
+            />
+            <Certificate
+                certificateURL="js"
+                certificateName="Curso Profesional de JavaScript"
+                certificateProvider="códigofacilito"
+                certificateSpan="sm:col-span-2"
+            />
+            <Certificate
+                certificateURL="ts"
+                certificateName="Curso de TypeScript"
+                certificateProvider="códigofacilito"
+                certificateSpan=""
+            />
+            <Certificate
+                certificateURL="git"
+                certificateName="Curso Profesional de Git"
+                certificateProvider="códigofacilito"
+                certificateSpan=""
+            />
+            <Certificate
+                certificateURL="design"
+                certificateName="Curso de Diseño para Programadores"
+                certificateProvider="códigofacilito"
+                certificateSpan="sm:col-span-2"
+            />
+        </section>
+
+        <!-- <section class="contact w-full" id="contact">
         <div class="py-8 mx-auto w-full">
             <h2 class="mb-4 text-3xl font-extrabold text-left text-[#fff]">Contact Me</h2>
             <form action="https://formsubmit.co/alejandrohernandezpolo@gmail.com" class="space-y-2 sm:space-y-0 w-[100%] sm:grid sm:grid-cols-2 sm:gap-4" method="post">
@@ -120,8 +209,9 @@ import Certificate from '../components/Certificate.astro';
             </form>
         </div>
     </section> -->
-
     <footer class="mx-auto">
-        <p class="text-[#d7d7fa] text-sm sm:text-base font-medium mt-8 mb-0 mx-2 py-2 px-0">2023 Alejandro Hernández Polo | YourFriendlyADC</p>
+        <p class="text-[#d7d7fa] text-sm sm:text-base font-medium mt-8 mb-0 mx-2 py-2 px-0">
+            2024 Alejandro Hernández Polo | Adechlien
+        </p>
     </footer>
 </Layout>

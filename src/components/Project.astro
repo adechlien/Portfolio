@@ -5,18 +5,16 @@ const {projectImage, projectName, projectDescription, projectURL, projectRepo} =
 <a href=`${projectURL}` target="_blank" class="projects relative flex flex-col justify-center items-center gap-2 text-center bg-[#333343] rounded-lg p-3">
     <i class="ti ti-external-link absolute right-2 top-1 text-xl text-[#333343] duration-300"></i>
     <img src=`/${projectImage}` class="w-[25%] rounded-sm" alt="Project">
-    <div class="project-description">
+    <div class="project-description flex flex-col">
         <h3 class="text-xl font-medium text-[#ffffff]">{projectName}</h3>
         <p class="text-[#d7d9fa] font-normal text-sm">{projectDescription}</p>
         <div class="technologies-used flex flex-row justify-center items-center gap-2 mt-1 text-xl text-[#4858a7]">
             <i class='ti ti-brand-html5 html-icon'></i>
 			<i class='ti ti-brand-css3 css-icon'></i>
 			<i class='ti ti-brand-javascript js-icon'></i>
+			<i class="ti ti-brand-tailwind tailwind-icon"></i>
+            <i class="ti ti-brand-astro astro-icon"></i>
             <slot/>
         </div>
-    </div>
-    <div class="project-links flex flex-row justify-center items-center gap-4">
-        <!-- <a href=`${projectURL}` target="_blank" class="text-[#f3dab7] hover:text-white duration-500"><i class="ti ti-world-www mx-1"></i>Visit here</a> -->
-        <!-- <a href=`${projectRepo}` target="_blank" class="text-[#f3dab7] hover:text-white duration-500"><i class="ti ti-brand-github mx-1"></i>Repository</a> -->
-    </div>
+    </div
 </a>
