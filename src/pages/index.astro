@@ -1,217 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Knowledge from "../components/Knowledge.astro";
-import Project from "../components/Project.astro";
-import Certificate from "../components/Certificate.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
+import Certifications from "../components/Certifications.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="Alejandro Hernández's Portfolio">
-    <!-- <header
-        class="flex flex-row justify-evenly items-center my-3 mx-0 bg-[#54506066] rounded-md shadow backdrop-blur w-[95%] sm:w-[660px] fixed z-10"
-    >
-        <img src="/adc-logo.png" alt="Logo" class="w-8 hidden md:flex" />
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#about-me"
-            >About me</a
-        >
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#knowledges"
-            >Skills</a
-        >
-        <a class="text-[#fff] font-medium my-3 mx-0" href="#projects"
-            >Projects</a
-        >
-        <!-- <a class="text-[#fff] font-medium my-3 mx-0" href="#contact">Contact</a>
-    </header> -->
+    <!-- Header -->
+    <!-- <Header /> -->
 
-    <section
-        class="portrait flex flex-col justify-center items-center text-2xl font-medium h-[100vh] gap-8 mx-4"
-        id="portrait"
-    >
-        <img class="w-[60%] md:w-[35%] rounded-full" src="/alejandro.jpg" alt="me"/>
-        <div class="my-description flex flex-col justify-end items-center">
-            <h2 class="text-2xl text-[#fff]">Alejandro J. Hernández Polo</h2>
-            <p class="text-[#8b96c9] text-xl">Frontend Developer</p>
-            <div
-                class="contact flex flex-row justify-center items-start gap-2 md:gap-5 mt-4 mx-0 text-[#536eb3] rounded-lg"
-            >
-                <a
-                    class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]"
-                    href="https://github.com/Adechlien"
-                    target="_blank"
-                    rel="noopener"><i class="ti ti-brand-github"></i></a
-                >
-                <a
-                    class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]"
-                    href="https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-polo/"
-                    target="_blank"
-                    rel="noopener"><i class="ti ti-brand-linkedin"></i></a
-                >
-                <!-- <a class="download-cv flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]" href="images/CV.pdf" download="" rel="noopener"><i class="ti ti-file-cv"></i></a> -->
-                <a
-                    class="flex flex-row justify-center items-center gap-2 duration-500 cursor-pointer hover:text-[#fff]"
-                    href="https://www.instagram.com/yourfriendlyadc/"
-                    target="_blank"
-                    rel="noopener"><i class="ti ti-brand-instagram"></i></a
-                >
-            </div>
-        </div>
-    </section>
+    <!-- Hero section -->
+    <Hero />
 
-    <!-- About me section -->
-    <section
-        class="about-me flex flex-col justify-center items-center mx-4 w-full pb-4" id="about-me">
-        <div class="my-information flex flex-col justify-evenly items-start">
-            <!-- <img class="my-2 rounded-lg w-[40%]" src="/images/alejandro-4.jpg" alt="me" title="me"> -->
-            <div
-                class="my-information-text flex flex-col justify-center items-start gap-2"
-            >
-                <h2 class="text-3xl text-[#fff] my-2 mx-0 font-bold">
-                    About me
-                </h2>
-                <p class="text-[#8a98cf]">
-                    Young adult studying <span class="text-[#fff] font-medium">Systems Engineering</span> at the <span class="text-[#fff] font-medium"
-                    >Universidad del Norte <i class="ti ti-school"></i></span>
-                    in Colombia. Amazed about visually appealing web designs, focused
-                    on Frontend development, using <span class="text-[#fff] font-medium">UX/UI</span>
-                    principles.<br /><br />
-                    <span class="text-[#fff] font-medium">Since 2022</span>,
-                    I've been on a cool journey to level up my programming and
-                    web development skills. <span class="text-[#fff] font-medium"
-                        >My goal is to become a Fullstack Developer <i class="ti ti-target-arrow"></i></span
-                    >, combining my skills in Frontend and Backend development
-                    to make awesome digital experiences.<br /><br />
-                    When I'm not coding, I chill out playing <span class="text-[#fff] font-medium">Tennis <i class="ti ti-ball-tennis"></i></span
-                    >. Also, like reading <span class="text-[#fff] font-medium"
-                        >Spider-Man <i class="ti ti-spider"></i></span
-                    > comics, my favorite superhero, <span class="text-[#fff] font-medium">Colombian literature <i class="ti ti-books"></i> </span> and exploring
-                    the fascinating world of <a
-                        href="https://letterboxd.com/Adechlien/"
-                        class="text-[#fff] font-medium underline"
-                        target="_blank">Cinema <i class="ti ti-movie"></i></a
-                    >.
-                </p>
-            </div>
-        </div>
-    </section>
+    <!-- Projects section -->
+    <Projects />
 
     <!-- Skills section -->
-    <section
-        class="flex flex-col items-start justify-center py-4 px-0 w-full mx-4">
-        <h2 class="text-3xl text-[#fff] my-4 mx-0 font-bold">Skills</h2>
-        <span class="text-xl text-[#8a98cf] my-4 mx-0 font-bold">Frontend</span>
-        <div
-            class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center mb-4"
-        >
-            <Knowledge iconBrandName="html5" iconName="html" pName="HTML" />
-            <Knowledge iconBrandName="css3" iconName="css" pName="CSS" />
-            <Knowledge iconBrandName="javascript" iconName="js" pName="JavaScript"/>
-            <Knowledge iconBrandName="typescript" iconName="ts" pName="TypeScript"/>
-            <Knowledge iconBrandName="tailwind" iconName="tailwind" pName="Tailwind"/>
-            <Knowledge iconBrandName="astro" iconName="astro" pName="Astro" />
-            <!-- <Knowledge iconBrandName="react" iconName="react" pName="ReactJS"/> -->
-            <!-- <Knowledge iconBrandName="nextjs" iconName="nextjs" pName="NextJS"/> -->
-            <!-- <Knowledge iconBrandName="nodejs" iconName="node" pName="NodeJS"/>
-			<Knowledge iconBrandName="mongodb" iconName="mongodb" pName="MongoDB"/> -->
-            <Knowledge iconBrandName="python" iconName="python" pName="Python"/>
-        </div>
-        <span class="text-xl text-[#8a98cf] my-4 mx-0 font-bold">Tools</span>
-        <div
-            class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-[#6c82cb] w-[100%] gap-8 text-center"
-        >
-            <Knowledge iconBrandName="git" iconName="git" pName="Git" />
-            <Knowledge iconBrandName="figma" iconName="figma" pName="Figma" />
-        </div>
-    </section>
+    <Skills />
 
-    <!-- Projects Sections -->
-        <section class="flex flex-col sm:grid sm:grid-cols-2 gap-6 py-4 w-full">
-            <h2 class="text-3xl text-left text-[#fff] my-4 mx-0 font-bold sm:col-span-2">
-                Latest Projects
-            </h2>
-            <Project
-                projectName="Leggiamo"
-                projectImage="leggiamo-icon.png"
-                projectDescription="Read latest stories written by me."
-                projectURL="https://leggiamo.vercel.app/"
-                projectRepo="https://github.com/Adechlien/Leggiamo"
-            >
-                <i class="ti ti-brand-typescript ts-icon"></i>
-            </Project>
-            <Project
-                projectImage="hess-logo.png"
-                projectName="Hess"
-                projectDescription="Guess the hexadecimal code of the color!"
-                projectURL="https://hess.vercel.app/"
-                projectRepo="https://github.com/Adechlien/Hess"
-            >
-            </Project>
-        </section>
+    <!-- About me section -->
+    <AboutMe />
 
-    <!-- Certifications Sections -->
-        <section class="flex flex-col sm:grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 w-full">
-            <h2 class="text-3xl text-left text-[#fff] my-4 mx-0 font-bold col-span-3">
-                Certifications
-            </h2>
-            <Certificate
-                certificateURL="css"
-                certificateName="Curso de CSS"
-                certificateProvider="códigofacilito"
-                certificateSpan=""
-            />
-            <Certificate
-                certificateURL="tailwind"
-                certificateName="Curso de Introducción a TailwindCSS"
-                certificateProvider="códigofacilito"
-                certificateSpan="sm:col-span-2"
-            />
-            <Certificate
-                certificateURL="js"
-                certificateName="Curso Profesional de JavaScript"
-                certificateProvider="códigofacilito"
-                certificateSpan="sm:col-span-2"
-            />
-            <Certificate
-                certificateURL="ts"
-                certificateName="Curso de TypeScript"
-                certificateProvider="códigofacilito"
-                certificateSpan=""
-            />
-            <Certificate
-                certificateURL="git"
-                certificateName="Curso Profesional de Git"
-                certificateProvider="códigofacilito"
-                certificateSpan=""
-            />
-            <Certificate
-                certificateURL="design"
-                certificateName="Curso de Diseño para Programadores"
-                certificateProvider="códigofacilito"
-                certificateSpan="sm:col-span-2"
-            />
-        </section>
+    <!-- Certifications section -->
+    <Certifications />
 
-        <!-- <section class="contact w-full" id="contact">
-        <div class="py-8 mx-auto w-full">
-            <h2 class="mb-4 text-3xl font-extrabold text-left text-[#fff]">Contact Me</h2>
-            <form action="https://formsubmit.co/alejandrohernandezpolo@gmail.com" class="space-y-2 sm:space-y-0 w-[100%] sm:grid sm:grid-cols-2 sm:gap-4" method="post">
-                <div>
-                    <label for="email" class="block mb-2 text-sm font-medium text-[#E7FAD7]">Your email</label>
-                    <input type="email" id="email" class="shadow-sm text-[#E7FAD7] text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-[#333343]" placeholder="name@mail.com" required>
-                </div>
-                <div>
-                    <label for="subject" class="block mb-2 text-sm font-medium text-[#E7FAD7]">Subject</label>
-                    <input type="text" id="subject" class="shadow-sm text-[#E7FAD7] text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-[#333343]" placeholder="Let me know how I can help you" required>
-                </div>
-                <div class="sm:col-span-2">
-                    <label for="message" class="block mb-2 text-sm font-medium text-[#E7FAD7]">Your message</label>
-                    <textarea id="message" rows="6" class="shadow-sm text-[#E7FAD7] text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-[#333343]" placeholder="Leave a comment..."></textarea>
-                </div>
-                <button type="submit" class="py-3 px-5 text-sm font-semibold text-center text-[#16161d] rounded-lg bg-[#E7FAD7] hover:bg-[#72a748] duration-300 w-full hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 col-span-2">Send message</button>
-            </form>
-        </div>
-    </section> -->
-    <footer class="mx-auto">
-        <p class="text-[#d7d7fa] text-sm sm:text-base font-medium mt-8 mb-0 mx-2 py-2 px-0">
-            2024 Alejandro Hernández Polo | Adechlien
-        </p>
-    </footer>
+    <!-- Contact -->
+    <!-- <Contact /> -->
+
 </Layout>

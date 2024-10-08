@@ -1,0 +1,23 @@
+---
+import Skill from './Skill.astro'
+---
+
+<section class="flex flex-col items-start justify-center py-4 px-0 w-full mx-4 mb-8">
+    <h2 class="text-3xl text-white mx-0 font-bold">Skills</h2>
+    <span class="text-xl text-dark-text my-4 mx-0 font-bold">Frontend</span>
+    <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-dark-text w-full gap-8 text-center mb-4">
+        <Skill iconBrandName="brand-html5" iconName="html" pName="HTML" />
+        <Skill iconBrandName="brand-css3" iconName="css" pName="CSS" />
+        <Skill iconBrandName="brand-javascript" iconName="js" pName="JavaScript"/>
+        <Skill iconBrandName="brand-typescript" iconName="ts" pName="TypeScript"/>
+        <Skill iconBrandName="brand-tailwind" iconName="tailwind" pName="Tailwind"/>
+        <Skill iconBrandName="brand-astro" iconName="astro" pName="Astro" />
+        <Skill iconBrandName="brand-react" iconName="react" pName="ReactJS"/>
+        <!-- <Skill iconBrandName="brand-nextjs" iconName="nextjs" pName="NextJS"/> -->
+    </div>
+    <span class="text-xl text-dark-text my-4 mx-0 font-bold">Tools</span>
+    <div class="knowledges-list grid grid-cols-3 sm:grid-cols-6 justify-baseline items-center text-dark-text w-full gap-8 text-center">
+        <Skill iconBrandName="brand-git" iconName="git" pName="Git" />
+        <Skill iconBrandName="brand-figma" iconName="figma" pName="Figma" />
+    </div>
+</section>

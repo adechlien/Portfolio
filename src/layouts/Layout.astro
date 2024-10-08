@@ -23,18 +23,21 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	</head>
 
-	<body class="flex flex-col items-center max-w-[640px] mx-[1.5rem] sm:mx-auto font-barlow bg-[#16161d] list-none no-underline scroll-smooth overflow-x-hidden">
+	<body class="flex flex-col items-center max-w-[640px] mx-[1.5rem] sm:mx-auto font-barlow bg-dark-bg list-none no-underline scroll-smooth overflow-x-hidden">
 		<slot />
+		<footer class="mx-auto">
+            <p class="text-white text-sm sm:text-base font-medium mt-8 mb-0 mx-2 py-2 px-0">
+                Adechlien | Alejandro J. Hernández Polo
+            </p>
+        </footer>
+
 		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 	</body>
 
 </html>
 
 <style is:global>
-	<!-- Scroll -->
-	body {
-		scroll-behavior: smooth;
-	}
+
 
 	<!-- Icons -->
 	.icon {
@@ -79,7 +82,8 @@ const { title } = Astro.props;
 		color: #0177d1;
 	}
 
-	.knowledge .tailwind-icon:hover, .knowledge .tailwind-icon:hover + p {
+	.knowledge .tailwind-icon:hover, .knowledge .tailwind-icon:hover + p,
+	.knowledge .sql-icon:hover, .knowledge .sql-icon:hover + p{
 		filter: drop-shadow(0 0 0.5rem #61c2c4);
 		color: #61c2c4;
 	}
@@ -97,11 +101,6 @@ const { title } = Astro.props;
 	.knowledge .node-icon:hover, .knowledge .node-icon:hover + p {
 		filter: drop-shadow(0 0 0.5rem #91c640);
 		color: #91c640;
-	}
-
-	.knowledge .overleaf-icon:hover, .knowledge .overleaf-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #12914e);
-		color: #12914e;
 	}
 
 	.knowledge .astro-icon:hover, .knowledge .astro-icon:hover + p {
@@ -143,7 +142,7 @@ const { title } = Astro.props;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: linear-gradient(to bottom right, #ecd7fa, #8148a7);
+		background: linear-gradient(to bottom right, #9fb5cc, #4f94ff);
 	}
 
 	/* .projects-list {
@@ -151,6 +150,6 @@ const { title } = Astro.props;
 	} */
 
 	.projects:hover > i {
-		color: #4858a7;
+		color: #98CCF3;
 	}
 </style>

@@ -1,20 +1,13 @@
 ---
-const {projectImage, projectName, projectDescription, projectURL, projectRepo} = Astro.props;
+const {projectImage, projectName, projectDescriptionInfo, projectURL, projectRepo} = Astro.props;
 ---
 
-<a href=`${projectURL}` target="_blank" class="projects relative flex flex-col justify-center items-center gap-2 text-center bg-[#333343] rounded-lg p-3">
-    <i class="ti ti-external-link absolute right-2 top-1 text-xl text-[#333343] duration-300"></i>
+<a href=`${projectURL}` target="_blank" class="projects relative flex flex-col justify-start items-center gap-2 text-center bg-card rounded-xl p-3">
+    <i class="ti ti-external-link absolute right-2 top-1 text-xl text-card duration-300"></i>
     <img src=`/${projectImage}` class="w-[25%] rounded-sm" alt="Project">
-    <div class="project-description flex flex-col">
-        <h3 class="text-xl font-medium text-[#ffffff]">{projectName}</h3>
-        <p class="text-[#d7d9fa] font-normal text-sm">{projectDescription}</p>
-        <div class="technologies-used flex flex-row justify-center items-center gap-2 mt-1 text-xl text-[#4858a7]">
-            <i class='ti ti-brand-html5 html-icon'></i>
-			<i class='ti ti-brand-css3 css-icon'></i>
-			<i class='ti ti-brand-javascript js-icon'></i>
-			<i class="ti ti-brand-tailwind tailwind-icon"></i>
-            <i class="ti ti-brand-astro astro-icon"></i>
-            <slot/>
-        </div>
-    </div
+    <h3 class="text-xl font-medium text-white">{projectName}</h3>
+    <p class="text-dark-text font-normal text-sm">{projectDescriptionInfo}</p>
+    <div class="technologies-used flex flex-row justify-center items-center gap-2 mt-1 text-xl text-dark-text">
+        <slot/>
+    </div>
 </a>

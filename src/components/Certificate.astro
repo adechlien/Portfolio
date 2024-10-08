@@ -2,8 +2,8 @@
 const {certificateURL, certificateName, certificateProvider, certificateSpan} = Astro.props;
 ---
 
-<a class=`certificate text-center bg-[#333343] px-4 py-2 rounded ${certificateSpan}` href=`/certificados/certificado-${certificateURL}.pdf` target="_blank" rel="noopener">
-    <i class=`ti ti-certificate text-[#d7d9fa] text-3xl`></i>
-    <h3 class="text-[#d7d9fa] text-md">{certificateName}</h3>
-    <p class="text-[#6777c7]">{certificateProvider}</p>
+<a class=`certificate text-center bg-card px-4 py-2 rounded-lg ${certificateSpan}` href=`/certificados/certificado-${certificateURL}.pdf` target="_blank" rel="noopener">
+    <i class=`ti ti-certificate text-dark-text text-3xl`></i>
+    <h3 class="text-white text-md">{certificateName}</h3>
+    <p class="text-dark-text">{certificateProvider}</p>
 </a>
