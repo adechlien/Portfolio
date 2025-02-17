@@ -2,12 +2,12 @@
 const {projectImage, projectName, projectDescriptionInfo, projectURL, projectRepo} = Astro.props;
 ---
 
-<a href=`${projectURL}` target="_blank" class="projects relative flex flex-col justify-start items-center gap-2 text-center bg-card rounded-xl p-3">
-    <i class="ti ti-external-link absolute right-2 top-1 text-xl text-card duration-300"></i>
-    <img src=`/${projectImage}` class="w-[25%] rounded-sm" alt="Project">
-    <h3 class="text-xl font-medium text-white">{projectName}</h3>
-    <p class="text-dark-text font-normal text-sm">{projectDescriptionInfo}</p>
-    <div class="technologies-used flex flex-row justify-center items-center gap-2 mt-auto text-xl text-dark-text">
+<a href=`${projectURL}` target="_blank" class="projects relative flex flex-col justify-start items-center gap-2 text-center bg-swamp1 rounded-xl p-3">
+    <i class="ti ti-external-link absolute right-2 top-1 text-xl text-swamp1 duration-300"></i>
+    <img src=`/${projectImage}` class="h-16 rounded-sm" alt="Project">
+    <h3 class="text-xl font-medium text-venomous3">{projectName}</h3>
+    <p class="font-normal text-sm text-venomous1">{projectDescriptionInfo}</p>
+    <div class="technologies-used flex flex-row justify-center items-center gap-2 mt-auto text-xl text-venomous2">
         <slot/>
     </div>
 </a>

@@ -13,10 +13,23 @@ export default {
 			'barHardShadow': '#121212 4px 4px 5px 0px',
 		},
     colors: {
-      'white': '#FFFFFF',
-      'dark-bg': '#121B32',
-      'dark-text': '#98CCF3',
-      'card': '#343467',
+      // Boulevard
+      'boulevard4': '#8FB1F0',
+      'boulevard3': '#A1C4FF',
+      'boulevard2': '#B4D0FF',
+      'boulevard1': '#C7DCFF',
+
+      // Venomous
+      'venomous5': '#C7AFD7',
+      'venomous4': '#DBCCE8',
+      'venomous3': '#F6F8FE',
+      'venomous2': '#D9EEDB',
+      'venomous1': '#B0D8BE',
+
+      // Swamp
+      'swamp3': '#091A2B',
+      'swamp2': '#142039',
+      'swamp1': '#1E2646',
     }
 	},
 	plugins: [],

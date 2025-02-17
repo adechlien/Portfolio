@@ -3,6 +3,7 @@ const {iconBrandName, iconName, pName} = Astro.props;
 ---
 
 <div class="knowledge flex flex-col justify-center items-center text-center gap-2">
-    <i class=`ti ti-${iconBrandName} ${iconName}-icon icon text-5xl duration-500`></i>
-    <p class="duration-500 text-sm sm:text-base">{pName}</p>
+    <i class=`ti ti-${iconBrandName} ${iconName}-icon icon text-5xl duration-500 text-venomous5`></i>
+    <slot />
+    <p class="duration-500 text-sm sm:text-base text-venomous4">{pName}</p>
 </div>
