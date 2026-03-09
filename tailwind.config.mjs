@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      bellota: ["Bellota Text", sans-serif],
+      bellota: ["Bellota Text", "sans-serif"],
       bebas: ["Bebas Neue", "ui-sans-serif", "system-ui"],
     },
     boxShadow: {
