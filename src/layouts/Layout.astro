@@ -1,146 +1,36 @@
 ---
 interface Props {
-	title: string;
+    title: string;
 }
-
 const { title } = Astro.props;
+
+import PortfolioCard from "../components/PortfolioCard.astro";
+
 ---
 
 <!doctype html>
-<html lang="en" class="bg-swamp2">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<link rel="icon" href="/adechlien-logo.svg">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" />
-		<script type="text/javascript">
-            (function(){emailjs.init({publicKey: "Gt6QjFfuxm69UJu2S",});})();
-        </script>
-        <script src="../sendEmail.js"></script>
-	</head>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Portfolio" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <link rel="icon" href="/adechlien-logo.svg" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"/>
+    </head>
 
-	<body class="flex flex-col items-center max-w-2xl mx-[1.5rem] sm:mx-auto font-barlow list-none no-underline scroll-smooth overflow-x-hidden">
-		<slot />
-		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-	</body>
+    <body class="h-screen min-h-dvh bg-adech-swamp-3 text-adech-boulevard-1 antialiased overflow-x-hidden">
+        <PortfolioCard />
+    </body>
 
+    <style>
+        :root {
+            font-family: Bellota Text, sans-serif;
+        }
+    </style>
 </html>
-
-<style is:global>
-
-
-	<!-- Icons -->
-	.icon {
-		font-size: 4rem;
-	}
-
-	header {
-		animation: lay-down 1s ease-in-out .5s both;
-	}
-
-	@keyframes lay-down {
-		0% {
-			transform: translateY(-100px);
-		}
-
-		100% {
-			transform: translateY(0);
-		}
-	}
-
-	.knowledge .html-icon:hover, .knowledge .html-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #ff6a29);
-		color: #ff6a29;
-	}
-
-	/* .icon:hover {
-		filter: drop-shadow(0 0 0.5rem #4ad5fe);
-	} */
-
-	.knowledge .css-icon:hover, .knowledge .css-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #299bff);
-		color: #299bff;
-	}
-
-	.knowledge .js-icon:hover, .knowledge .js-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #f0da50);
-		color: #f0da50;
-	}
-
-	.knowledge .ts-icon:hover, .knowledge .ts-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #0177d1);
-		color: #0177d1;
-	}
-
-	.knowledge .tailwind-icon:hover, .knowledge .tailwind-icon:hover + p,
-	.knowledge .sql-icon:hover, .knowledge .sql-icon:hover + p{
-		filter: drop-shadow(0 0 0.5rem #61c2c4);
-		color: #61c2c4;
-	}
-
-	.knowledge .react-icon:hover, .knowledge .react-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #4ad5fe);
-		color: #4ad5fe;
-	}
-
-	.knowledge .nextjs-icon:hover, .knowledge .nextjs-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #aaa);
-		color: #999;
-	}
-
-	.knowledge .node-icon:hover, .knowledge .node-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #91c640);
-		color: #91c640;
-	}
-
-	.knowledge .astro-icon:hover, .knowledge .astro-icon:hover + p {
-		scale: 1;
-		filter: drop-shadow(0 0 0.5rem #fa6f1f);
-		color: #fa6f1f;
-	}
-
-	.knowledge .git-icon:hover, .knowledge .git-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #fe4d41);
-		color: #fe4d41;
-	}
-
-	.knowledge .figma-icon:hover, .knowledge .figma-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #9f5cfe);
-		color: #9f5cfe;
-	}
-
-	.knowledge svg:hover, .knowledge svg:hover + p {
-		filter: drop-shadow(0 0 0.5rem #9AC0FF);
-		color: #9AC0FF;
-		animation-duration: .5s;
-	}
-
-	.knowledge .python-icon:hover, .knowledge .python-icon:hover + p {
-		filter: drop-shadow(0 0 0.5rem #63a7e3);
-		color: #63a7e3;
-	}
-
-	/* Scrollbar */
-	::-webkit-scrollbar {
-		width: .5rem;
-	}
-
-	::-webkit-scrollbar-track {
-		background-color: #1E2646;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: linear-gradient(to bottom right, #80BBA6, #CCE8CC);
-	}
-
-	.projects:hover > i {
-		color: #9AC0FF;
-	}
-</style>
